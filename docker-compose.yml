@@ -1,0 +1,10 @@
+services:
+  kallia:
+    image: kallia-project/kallia:0.1.0
+    container_name: kallia
+    ports:
+      - "8000:80"
+    environment:
+      - API_KEY=ollama
+      - BASE_URL=http://localhost:11434/v1
+      - MODEL=qwen2.5vl:32b
