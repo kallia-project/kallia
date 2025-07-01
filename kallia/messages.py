@@ -11,16 +11,16 @@ class Messages:
         max_tokens: int,
         stream: bool = False,
     ) -> Optional[str]:
-        endpoint_url = f"{Settings.BASE_URL}/chat/completions"
+        endpoint_url = f"{Settings.KALLIA_PROVIDER_BASE_URL}/chat/completions"
         headers = {
-            "Authorization": f"Bearer {Settings.API_KEY}",
+            "Authorization": f"Bearer {Settings.KALLIA_PROVIDER_API_KEY}",
             "Content-Type": "application/json",
         }
         payload = {
             "messages": messages,
             "temperature": temperature,
             "max_tokens": max_tokens,
-            "model": Settings.MODEL,
+            "model": Settings.KALLIA_PROVIDER_MODEL,
             "stream": stream,
         }
         response = requests.post(endpoint_url, headers=headers, json=payload)

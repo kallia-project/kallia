@@ -18,7 +18,7 @@ extraction, knowledge base construction, and semantic search implementations.
 Author: CK
 GitHub: https://github.com/kallia-project/kallia
 License: Apache License 2.0
-Version: 0.1.0
+Version: 0.1.1
 """
 
 import requests

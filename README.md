@@ -16,11 +16,19 @@ Kallia is a FastAPI-based document processing service that converts documents in
 
 ## 📋 Prerequisites
 
-- Python 3.11 or higher
+- Python 3.9 or higher (3.9, 3.10, 3.11, 3.12, 3.13 supported)
 - Docker (optional, for containerized deployment)
 - Access to a compatible language model API (OpenRouter, Ollama, etc.)
 
 ## 🛠️ Installation
+
+### PyPI Installation (Recommended)
+
+Install Kallia directly from PyPI:
+
+```bash
+pip install kallia
+```
 
 ### Local Development Setup
 
@@ -46,9 +54,9 @@ Kallia is a FastAPI-based document processing service that converts documents in
    Edit `.env` with your configuration:
 
    ```env
-   API_KEY=your_api_key_here
-   BASE_URL=https://openrouter.ai/api/v1
-   MODEL=qwen/qwen2.5-vl-32b-instruct
+   KALLIA_PROVIDER_API_KEY=your_api_key_here
+   KALLIA_PROVIDER_BASE_URL=https://openrouter.ai/api/v1
+   KALLIA_PROVIDER_MODEL=qwen/qwen2.5-vl-32b-instruct
    ```
 
 4. **Run the application**
@@ -65,20 +73,28 @@ Kallia is a FastAPI-based document processing service that converts documents in
    ```
 
 2. **Manual Docker Build**
+
    ```bash
-   docker build -t kallia-project/kallia:0.1.0 .
-   docker run -p 8000:80 -e API_KEY=ollama -e BASE_URL=http://localhost:11434/v1 -e MODEL=qwen2.5vl:32b kallia-project/kallia:0.1.0
+   # Build the Docker image
+   docker build -t overheatsystem/kallia:0.1.1 .
+
+   # Run the container
+   docker run -p 8000:80 \
+     -e KALLIA_PROVIDER_API_KEY=ollama \
+     -e KALLIA_PROVIDER_BASE_URL=http://localhost:11434/v1 \
+     -e KALLIA_PROVIDER_MODEL=qwen2.5vl:32b \
+     overheatsystem/kallia:0.1.1
    ```
 
 ## ⚙️ Configuration
 
 ### Environment Variables
 
-| Variable   | Description                              | Example                     |
-| ---------- | ---------------------------------------- | --------------------------- |
-| `API_KEY`  | API key for your language model provider | `ollama`                    |
-| `BASE_URL` | Base URL for the API endpoint            | `http://localhost:11434/v1` |
-| `MODEL`    | Model identifier to use                  | `qwen2.5vl:32b`             |
+| Variable                   | Description                              | Example                     |
+| -------------------------- | ---------------------------------------- | --------------------------- |
+| `KALLIA_PROVIDER_API_KEY`  | API key for your language model provider | `ollama`                    |
+| `KALLIA_PROVIDER_BASE_URL` | Base URL for the API endpoint            | `http://localhost:11434/v1` |
+| `KALLIA_PROVIDER_MODEL`    | Model identifier to use                  | `qwen2.5vl:32b`             |
 
 ### Supported Providers
 
@@ -98,7 +114,7 @@ Converts a document into semantic chunks with concise summaries.
 
 ```json
 {
-  "url": "https://example.com/document.pdf",
+  "url": "https://github.com/kallia-project/kallia/blob/main/assets/pdf/01.pdf",
   "page_number": 1,
   "temperature": 0.0,
   "max_tokens": 8192
@@ -133,14 +149,14 @@ Converts a document into semantic chunks with concise summaries.
 curl -X POST "http://localhost:8000/chunks" \
   -H "Content-Type: application/json" \
   -d '{
-    "url": "https://example.com/document.pdf",
+    "url": "https://github.com/kallia-project/kallia/blob/main/assets/pdf/01.pdf",
     "page_number": 1,
     "temperature": 0.0,
     "max_tokens": 4096
   }'
 ```
 
-#### Python
+#### Python API Client
 
 ```python
 import requests
@@ -148,7 +164,7 @@ import requests
 response = requests.post(
     "http://localhost:8000/chunks",
     json={
-        "url": "https://example.com/document.pdf",
+        "url": "https://github.com/kallia-project/kallia/blob/main/assets/pdf/01.pdf",
         "page_number": 1,
         "temperature": 0.0,
         "max_tokens": 4096
@@ -157,8 +173,67 @@ response = requests.post(
 
 chunks = response.json()["chunks"]
 for chunk in chunks:
-    print(f"Summary: {chunk['concise_summary']}")
     print(f"Original: {chunk['original_text']}")
+    print(f"Summary: {chunk['concise_summary']}")
+    print("---")
+```
+
+### Programmatic Usage
+
+You can also use Kallia directly as a Python library without running the API server:
+
+#### Convert PDF to Markdown
+
+```python
+from kallia.documents import Documents
+
+# Convert a PDF document to markdown
+url = "./assets/pdf/01.pdf"
+page_number = 1
+temperature = 0.0
+max_tokens = 8192
+
+markdown_content = Documents.to_markdown(
+    source=url,
+    page_number=page_number,
+    temperature=temperature,
+    max_tokens=max_tokens,
+)
+
+print(markdown_content)
+```
+
+#### Create Semantic Chunks
+
+```python
+from kallia.documents import Documents
+from kallia.chunker import Chunker
+
+# First convert document to markdown
+url = "./assets/pdf/01.pdf"
+page_number = 1
+temperature = 0.0
+max_tokens = 8192
+
+markdown_content = Documents.to_markdown(
+    source=url,
+    page_number=page_number,
+    temperature=temperature,
+    max_tokens=max_tokens,
+)
+
+# Then create semantic chunks from the markdown
+semantic_chunks = Chunker.create(
+    text=markdown_content,
+    temperature=temperature,
+    max_tokens=max_tokens,
+)
+
+# Process the chunks
+for chunk in semantic_chunks:
+    print(f"Original: {chunk['original_text']}")
+    print(f"Summary: {chunk['concise_summary']}")
+    print("---")
 ```
 
 ## 🏗️ Project Structure
@@ -180,7 +255,15 @@ kallia/
 │   ├── prompts.py           # AI model prompts
 │   ├── image_caption_serializer.py
 │   └── unordered_list_serializer.py
+├── tests/                   # Test suite
+│   ├── __init__.py
+│   ├── test_pdf_to_markdown.py
+│   └── test_markdown_to_chunks.py
+├── assets/                  # Test assets
+│   └── pdf/
+│       └── 01.pdf          # Sample PDF for testing
 ├── requirements.txt         # Python dependencies
+├── pyproject.toml          # Project configuration
 ├── Dockerfile              # Docker container configuration
 ├── docker-compose.yml      # Docker Compose setup
 ├── .env.example           # Environment variables template
@@ -197,6 +280,25 @@ The project follows Python best practices and uses:
 - Pydantic for data validation
 - Structured logging
 - Comprehensive error handling
+
+### Testing
+
+The project includes comprehensive tests for core functionality:
+
+```bash
+# Run tests
+pytest tests/
+
+# Run specific tests
+pytest tests/test_pdf_to_markdown.py
+pytest tests/test_markdown_to_chunks.py
+```
+
+Test coverage includes:
+
+- PDF to markdown conversion
+- Markdown to semantic chunks processing
+- End-to-end document processing pipeline
 
 ## 📦 Dependencies
 
@@ -226,12 +328,13 @@ The API provides comprehensive error handling with appropriate HTTP status codes
 
 ## 📄 License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/kallia-project/kallia/blob/main/LICENSE) file for details.
 
 ## 👨‍💻 Author
 
 **CK**
 
+- Email: ck@kallia.net
 - GitHub: [@kallia-project](https://github.com/kallia-project/kallia)
 
 ## 🔗 Links
@@ -241,7 +344,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## 📈 Version
 
-Current version: **0.1.0**
+Current version: **0.1.1**
 
 ---
 

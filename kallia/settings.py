@@ -1,9 +1,11 @@
 import os
-from dotenv import load_dotenv
+import dotenv
 
 
-load_dotenv()
+dotenv.load_dotenv(dotenv.find_dotenv(usecwd=True))
 
-API_KEY = os.getenv("API_KEY", "ollama")
-BASE_URL = os.getenv("BASE_URL", "http://localhost:11434/v1")
-MODEL = os.getenv("MODEL", "qwen2.5vl:32b")
+KALLIA_PROVIDER_API_KEY = os.getenv("KALLIA_PROVIDER_API_KEY", "ollama")
+KALLIA_PROVIDER_BASE_URL = os.getenv(
+    "KALLIA_PROVIDER_BASE_URL", "http://localhost:11434/v1"
+)
+KALLIA_PROVIDER_MODEL = os.getenv("KALLIA_PROVIDER_MODEL", "qwen2.5vl:32b")
