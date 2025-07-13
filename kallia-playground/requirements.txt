@@ -1,0 +1,8 @@
+kallia==0.1.2
+chainlit==2.6.0
+langchain==0.3.26
+langchain-openai==0.3.27
+langchain-huggingface==0.3.0
+langgraph==0.5.1
+tiktoken==0.9.0
+pdfminer.six==20250506

@@ -18,7 +18,7 @@ extraction, knowledge base construction, and semantic search implementations.
 Author: CK
 GitHub: https://github.com/kallia-project/kallia
 License: Apache License 2.0
-Version: 0.1.1
+Version: 0.1.2
 """
 
 import requests
@@ -38,8 +38,8 @@ Logger.config(logger)
 app = FastAPI(title=Constants.APP_NAME, version=Constants.VERSION)
 
 
-@app.post("/chunks", response_model=Models.ChunksResponse)
-def chunks(request: Models.ChunksRequest):
+@app.post("/documents", response_model=Models.DocumentsResponse)
+def documents(request: Models.DocumentsRequest):
     try:
         file_format = Utils.get_extension(request.url)
         if file_format not in Constants.SUPPORTED_FILE_FORMATS:
@@ -55,7 +55,10 @@ def chunks(request: Models.ChunksRequest):
             temperature=request.temperature,
             max_tokens=request.max_tokens,
         )
-        return Models.ChunksResponse(chunks=semantic_chunks)
+        documents = [
+            Models.Document(page_number=request.page_number, chunks=semantic_chunks)
+        ]
+        return Models.DocumentsResponse(documents=documents)
 
     except requests.exceptions.RequestException as e:
         logger.error(f"Service Unavailable {request.url} {e}")

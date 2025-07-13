@@ -2,7 +2,7 @@ from typing import List
 from pydantic import BaseModel
 
 
-class ChunksRequest(BaseModel):
+class DocumentsRequest(BaseModel):
     url: str
     page_number: int = 1
     temperature: float = 0.0
@@ -14,5 +14,10 @@ class Chunk(BaseModel):
     concise_summary: str
 
 
-class ChunksResponse(BaseModel):
+class Document(BaseModel):
+    page_number: int
     chunks: List[Chunk] = []
+
+
+class DocumentsResponse(BaseModel):
+    documents: List[Document]

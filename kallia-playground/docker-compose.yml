@@ -1,0 +1,10 @@
+services:
+  kallia-playground:
+    image: kallia-playground:0.1.0
+    container_name: kallia-playground
+    ports:
+      - "8000:80"
+    environment:
+      - KALLIA_PROVIDER_API_KEY=ollama
+      - KALLIA_PROVIDER_BASE_URL=http://localhost:11434/v1
+      - KALLIA_PROVIDER_MODEL=qwen2.5vl:32b

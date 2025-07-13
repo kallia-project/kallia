@@ -1,7 +1,6 @@
 import os
 import dotenv
 
-
 dotenv.load_dotenv(dotenv.find_dotenv(usecwd=True))
 
 KALLIA_PROVIDER_API_KEY = os.getenv("KALLIA_PROVIDER_API_KEY", "ollama")

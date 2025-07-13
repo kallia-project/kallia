@@ -13,10 +13,11 @@ Kallia is a FastAPI-based document processing service that converts documents in
 - **Configurable Processing**: Adjustable parameters for temperature, token limits, and page selection
 - **Docker Ready**: Containerized deployment with Docker and docker-compose support
 - **Vision-Language Model Integration**: Leverages advanced AI models for content understanding
+- **Interactive Playground**: Chainlit-based demo application for testing and exploration
 
 ## 📋 Prerequisites
 
-- Python 3.9 or higher (3.9, 3.10, 3.11, 3.12, 3.13 supported)
+- Python 3.11 or higher (3.11, 3.12, 3.13 supported)
 - Docker (optional, for containerized deployment)
 - Access to a compatible language model API (OpenRouter, Ollama, etc.)
 
@@ -42,6 +43,7 @@ pip install kallia
 2. **Install dependencies**
 
    ```bash
+   cd kallia
    pip install -r requirements.txt
    ```
 
@@ -69,6 +71,7 @@ pip install kallia
 1. **Using Docker Compose (Recommended)**
 
    ```bash
+   cd kallia
    docker-compose up -d
    ```
 
@@ -76,14 +79,14 @@ pip install kallia
 
    ```bash
    # Build the Docker image
-   docker build -t overheatsystem/kallia:0.1.1 .
+   docker build -t kallia:0.1.2 .
 
    # Run the container
    docker run -p 8000:80 \
      -e KALLIA_PROVIDER_API_KEY=ollama \
      -e KALLIA_PROVIDER_BASE_URL=http://localhost:11434/v1 \
      -e KALLIA_PROVIDER_MODEL=qwen2.5vl:32b \
-     overheatsystem/kallia:0.1.1
+     kallia:0.1.2
    ```
 
 ## ⚙️ Configuration
@@ -106,7 +109,7 @@ pip install kallia
 
 ### API Endpoint
 
-**POST** `/chunks`
+**POST** `/documents`
 
 Converts a document into semantic chunks with concise summaries.
 
@@ -114,7 +117,7 @@ Converts a document into semantic chunks with concise summaries.
 
 ```json
 {
-  "url": "https://github.com/kallia-project/kallia/blob/main/assets/pdf/01.pdf",
+  "url": "https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.2/assets/pdf/01.pdf",
   "page_number": 1,
   "temperature": 0.0,
   "max_tokens": 8192
@@ -132,10 +135,15 @@ Converts a document into semantic chunks with concise summaries.
 
 ```json
 {
-  "chunks": [
+  "documents": [
     {
-      "original_text": "Original document content...",
-      "concise_summary": "Concise summary of the content..."
+      "page_number": 1,
+      "chunks": [
+        {
+          "original_text": "Original document content...",
+          "concise_summary": "Concise summary of the content..."
+        }
+      ]
     }
   ]
 }
@@ -146,10 +154,10 @@ Converts a document into semantic chunks with concise summaries.
 #### cURL
 
 ```bash
-curl -X POST "http://localhost:8000/chunks" \
+curl -X POST "http://localhost:8000/documents" \
   -H "Content-Type: application/json" \
   -d '{
-    "url": "https://github.com/kallia-project/kallia/blob/main/assets/pdf/01.pdf",
+    "url": "https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.2/assets/pdf/01.pdf",
     "page_number": 1,
     "temperature": 0.0,
     "max_tokens": 4096
@@ -162,20 +170,24 @@ curl -X POST "http://localhost:8000/chunks" \
 import requests
 
 response = requests.post(
-    "http://localhost:8000/chunks",
+    "http://localhost:8000/documents",
     json={
-        "url": "https://github.com/kallia-project/kallia/blob/main/assets/pdf/01.pdf",
+        "url": "https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.2/assets/pdf/01.pdf",
         "page_number": 1,
         "temperature": 0.0,
         "max_tokens": 4096
     }
 )
 
-chunks = response.json()["chunks"]
-for chunk in chunks:
-    print(f"Original: {chunk['original_text']}")
-    print(f"Summary: {chunk['concise_summary']}")
-    print("---")
+result = response.json()
+documents = result["documents"]
+
+for document in documents:
+    print(f"Page {document['page_number']}:")
+    for chunk in document["chunks"]:
+        print(f"  Original: {chunk['original_text']}")
+        print(f"  Summary: {chunk['concise_summary']}")
+        print("  ---")
 ```
 
 ### Programmatic Usage
@@ -231,43 +243,99 @@ semantic_chunks = Chunker.create(
 
 # Process the chunks
 for chunk in semantic_chunks:
-    print(f"Original: {chunk['original_text']}")
-    print(f"Summary: {chunk['concise_summary']}")
+    print(f"Original: {chunk.original_text}")
+    print(f"Summary: {chunk.concise_summary}")
     print("---")
 ```
+
+## 🎮 Interactive Playground
+
+Kallia includes an interactive playground built with Chainlit for easy testing and exploration:
+
+### Running the Playground
+
+1. **Navigate to the playground directory**
+
+   ```bash
+   cd kallia-playground
+   ```
+
+2. **Install playground dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Configure environment variables**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+4. **Run the playground**
+
+   ```bash
+   chainlit run kallia-playground/main.py
+   ```
+
+5. **Access the interface**
+   Open your browser to `http://localhost:8000`
+
+### Playground Features
+
+- **File Upload**: Upload PDF documents directly through the web interface
+- **Real-time Processing**: Watch as documents are processed page by page
+- **Interactive Q&A**: Ask questions about uploaded documents
+- **Source References**: View the original chunks that inform each answer
+- **Multi-page Support**: Automatically processes all pages of uploaded documents
 
 ## 🏗️ Project Structure
 
 ```
 kallia/
-├── kallia/
-│   ├── __init__.py
-│   ├── main.py              # FastAPI application entry point
-│   ├── models.py            # Pydantic models for API
-│   ├── constants.py         # Application constants
-│   ├── documents.py         # Document processing logic
-│   ├── chunker.py           # Semantic chunking implementation
-│   ├── utils.py             # Utility functions
-│   ├── logger.py            # Logging configuration
-│   ├── settings.py          # Application settings
-│   ├── exceptions.py        # Custom exceptions
-│   ├── messages.py          # Message handling
-│   ├── prompts.py           # AI model prompts
-│   ├── image_caption_serializer.py
-│   └── unordered_list_serializer.py
-├── tests/                   # Test suite
+├── kallia/                      # Main package directory
+│   ├── kallia/
+│   │   ├── __init__.py
+│   │   ├── main.py              # FastAPI application entry point
+│   │   ├── models.py            # Pydantic models for API
+│   │   ├── constants.py         # Application constants
+│   │   ├── documents.py         # Document processing logic
+│   │   ├── chunker.py           # Semantic chunking implementation
+│   │   ├── utils.py             # Utility functions
+│   │   ├── logger.py            # Logging configuration
+│   │   ├── settings.py          # Application settings
+│   │   ├── exceptions.py        # Custom exceptions
+│   │   ├── messages.py          # Message handling
+│   │   ├── prompts.py           # AI model prompts
+│   │   ├── image_caption_serializer.py
+│   │   └── unordered_list_serializer.py
+│   ├── requirements.txt         # Python dependencies
+│   ├── Dockerfile               # Docker container configuration
+│   ├── docker-compose.yml       # Docker Compose setup
+│   └── .env.example             # Environment variables template
+├── kallia-playground/           # Interactive demo application
+│   ├── kallia-playground/
+│   │   ├── __init__.py
+│   │   ├── main.py              # Chainlit application
+│   │   ├── qa.py                # Q&A functionality
+│   │   ├── settings.py          # Playground settings
+│   │   ├── constants.py         # Playground constants
+│   │   └── chainlit.md          # Chainlit configuration
+│   ├── requirements.txt         # Playground dependencies
+│   ├── Dockerfile               # Playground Docker config
+│   ├── docker-compose.yml       # Playground Docker Compose
+│   └── .env.example             # Playground environment template
+├── tests/                       # Test suite
 │   ├── __init__.py
 │   ├── test_pdf_to_markdown.py
 │   └── test_markdown_to_chunks.py
-├── assets/                  # Test assets
+├── assets/                      # Test assets
 │   └── pdf/
-│       └── 01.pdf          # Sample PDF for testing
-├── requirements.txt         # Python dependencies
-├── pyproject.toml          # Project configuration
-├── Dockerfile              # Docker container configuration
-├── docker-compose.yml      # Docker Compose setup
-├── .env.example           # Environment variables template
-└── README.md              # This file
+│       └── 01.pdf               # Sample PDF for testing
+├── LICENSE                      # Apache 2.0 License
+├── pyproject.toml               # Project configuration
+└── README.md                    # This file
 ```
 
 ## 🔧 Development
@@ -306,17 +374,21 @@ Test coverage includes:
 
 - **FastAPI**: Modern, fast web framework for building APIs
 - **Docling**: Document processing and conversion library
-- **RapidOCR**: OCR capabilities for text extraction
-- **OpenCV**: Computer vision library for image processing
 
 ### Full Dependency List
 
-See `requirements.txt` for complete dependency specifications:
+See `kallia/requirements.txt` for complete dependency specifications:
 
-- `fastapi[standard]==0.115.14`
-- `docling==2.38.1`
-- `rapidocr-onnxruntime==1.4.4`
-- `opencv-python-headless==4.11.0.86`
+- `fastapi[standard]==0.116.1`
+- `docling==2.41.0`
+
+### Playground Dependencies
+
+The interactive playground has additional dependencies listed in `kallia-playground/requirements.txt`:
+
+- `chainlit`: For the interactive web interface
+- `langchain`: For document processing and Q&A functionality
+- `pdfminer`: For PDF metadata extraction
 
 ## 🚨 Error Handling
 
@@ -328,7 +400,7 @@ The API provides comprehensive error handling with appropriate HTTP status codes
 
 ## 📄 License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/kallia-project/kallia/blob/main/LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
@@ -341,10 +413,12 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](https:
 
 - [GitHub Repository](https://github.com/kallia-project/kallia)
 - [Issues](https://github.com/kallia-project/kallia/issues)
+- [PyPI Package](https://pypi.org/project/kallia/)
+- [Docker Hub](https://hub.docker.com/r/overheatsystem/kallia)
 
 ## 📈 Version
 
-Current version: **0.1.1**
+Current version: **0.1.2**
 
 ---
 

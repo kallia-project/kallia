@@ -1,6 +1,6 @@
 services:
   kallia:
-    image: overheatsystem/kallia:0.1.1
+    image: kallia:0.1.2
     container_name: kallia
     ports:
       - "8000:80"
