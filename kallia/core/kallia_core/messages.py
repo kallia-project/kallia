@@ -1,5 +1,5 @@
 import requests
-import kallia.settings as Settings
+import kallia_core.settings as Settings
 from typing import Any, Dict, List, Optional
 
 
@@ -7,8 +7,8 @@ class Messages:
     @staticmethod
     def send(
         messages: List[Dict[str, Any]],
-        temperature: float,
-        max_tokens: int,
+        temperature: float = 0.0,
+        max_tokens: int = 8192,
         stream: bool = False,
     ) -> Optional[str]:
         endpoint_url = f"{Settings.KALLIA_PROVIDER_BASE_URL}/chat/completions"

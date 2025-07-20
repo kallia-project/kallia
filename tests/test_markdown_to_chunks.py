@@ -1,9 +1,9 @@
-from kallia.documents import Documents
-from kallia.chunker import Chunker
+from kallia_core.documents import Documents
+from kallia_core.chunker import Chunker
 
 
 def test_markdown_to_chunks():
-    url = "assets/pdf/01.pdf"
+    url = "https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.3/assets/pdf/01.pdf"
     page_number = 1
     temperature = 0.0
     max_tokens = 8192

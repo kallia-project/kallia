@@ -18,19 +18,19 @@ extraction, knowledge base construction, and semantic search implementations.
 Author: CK
 GitHub: https://github.com/kallia-project/kallia
 License: Apache License 2.0
-Version: 0.1.2
+Version: 0.1.3
 """
 
 import requests
 import logging
-import kallia.models as Models
-import kallia.constants as Constants
+import kallia_core.models as Models
+import kallia_core.constants as Constants
 from fastapi import FastAPI, HTTPException
-from kallia.exceptions import InvalidParametersException
-from kallia.documents import Documents
-from kallia.chunker import Chunker
-from kallia.logger import Logger
-from kallia.utils import Utils
+from kallia_core.memories import Memories
+from kallia_core.documents import Documents
+from kallia_core.chunker import Chunker
+from kallia_core.logger import Logger
+from kallia_core.utils import Utils
 
 logger = logging.getLogger(__name__)
 Logger.config(logger)
@@ -38,12 +38,29 @@ Logger.config(logger)
 app = FastAPI(title=Constants.APP_NAME, version=Constants.VERSION)
 
 
+@app.post("/memories", response_model=Models.MemoriesResponse)
+def memories(request: Models.MemoriesRequest):
+    try:
+        memories = Memories.create(
+            messages=request.messages,
+            temperature=request.temperature,
+            max_tokens=request.max_tokens,
+        )
+        return Models.MemoriesResponse(memories=memories)
+
+    except Exception as e:
+        logger.error(f"Internal Server Error {e}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
+
+
 @app.post("/documents", response_model=Models.DocumentsResponse)
 def documents(request: Models.DocumentsRequest):
+    file_format = Utils.get_extension(request.url)
+    if file_format not in Constants.SUPPORTED_FILE_FORMATS:
+        logger.error("Invalid File Format")
+        raise HTTPException(status_code=400, detail="Invalid File Format")
+
     try:
-        file_format = Utils.get_extension(request.url)
-        if file_format not in Constants.SUPPORTED_FILE_FORMATS:
-            raise InvalidParametersException(f"Unsupported file format: {file_format}")
         markdown_content = Documents.to_markdown(
             source=request.url,
             page_number=request.page_number,
@@ -61,13 +78,9 @@ def documents(request: Models.DocumentsRequest):
         return Models.DocumentsResponse(documents=documents)
 
     except requests.exceptions.RequestException as e:
-        logger.error(f"Service Unavailable {request.url} {e}")
+        logger.error(f"Service Unavailable {e}")
         raise HTTPException(status_code=503, detail="Service Unavailable")
 
-    except InvalidParametersException as e:
-        logger.error(f"Invalid Parameters {request.url} {e}")
-        raise HTTPException(status_code=400, detail="Invalid Parameters")
-
     except Exception as e:
-        logger.error(f"Internal Server Error {request.url} {e}")
+        logger.error(f"Internal Server Error {e}")
         raise HTTPException(status_code=500, detail="Internal Server Error")

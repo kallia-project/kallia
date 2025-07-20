@@ -1,4 +1,4 @@
-from typing import List
+from typing import Any, Dict, List
 from pydantic import BaseModel
 
 
@@ -21,3 +21,18 @@ class Document(BaseModel):
 
 class DocumentsResponse(BaseModel):
     documents: List[Document]
+
+
+class Message(BaseModel):
+    role: str
+    content: str
+
+
+class MemoriesRequest(BaseModel):
+    messages: List[Message]
+    temperature: float = 0.0
+    max_tokens: int = 8192
+
+
+class MemoriesResponse(BaseModel):
+    memories: Dict[str, Any]

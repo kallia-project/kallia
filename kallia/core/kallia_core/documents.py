@@ -1,5 +1,5 @@
-from kallia.image_caption_serializer import ImageCaptionSerializer
-from kallia.unordered_list_serializer import UnorderedListSerializer
+from kallia_core.image_caption_serializer import ImageCaptionSerializer
+from kallia_core.unordered_list_serializer import UnorderedListSerializer
 from docling.document_converter import DocumentConverter, PdfFormatOption
 from docling_core.transforms.serializer.markdown import MarkdownDocSerializer
 from docling.datamodel.pipeline_options import PdfPipelineOptions
@@ -9,7 +9,10 @@ from docling.datamodel.base_models import InputFormat
 class Documents:
     @staticmethod
     def to_markdown(
-        source: str, page_number: int, temperature: float, max_tokens: int
+        source: str,
+        page_number: int = 1,
+        temperature: float = 0.0,
+        max_tokens: int = 8192,
     ) -> str:
         pipeline_options = PdfPipelineOptions()
         pipeline_options.do_ocr = False

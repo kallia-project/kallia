@@ -1,7 +1,8 @@
+name: kallia
 services:
-  kallia-playground:
-    image: kallia-playground:0.1.0
-    container_name: kallia-playground
+  playground:
+    build: .
+    container_name: playground
     ports:
       - "8000:80"
     environment:

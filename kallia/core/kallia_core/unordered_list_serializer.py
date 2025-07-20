@@ -1,4 +1,4 @@
-import kallia.prompts as Prompts
+import kallia_core.prompts as Prompts
 from typing import Any
 from docling_core.transforms.serializer.base import (
     BaseDocSerializer,
@@ -8,8 +8,8 @@ from docling_core.transforms.serializer.common import create_ser_result
 from docling_core.transforms.serializer.markdown import MarkdownTableSerializer
 from docling_core.types.doc.document import TableItem, DoclingDocument
 from typing_extensions import override
-from kallia.messages import Messages
-from kallia.utils import Utils
+from kallia_core.messages import Messages
+from kallia_core.utils import Utils
 
 
 class UnorderedListSerializer(MarkdownTableSerializer):

@@ -81,3 +81,34 @@ IMAGE_CAPTIONING_PROMPT = """**Role:**
 **Output Format:**
 • Provide only the caption text wrapped in <information> tags
 • No additional text, explanations, or formatting before or after the tagged caption"""
+
+MEMORY_EXTRACTION_PROMPT = """**Role:**
+• Act as a helpful assistant specializing in content analysis and data extraction
+
+**Task:**
+• Extract and organize categories and subcategories from provided conversation content into a structured format
+
+**Guidelines:**
+• Identify main thematic categories present in the conversation
+• Determine relevant subcategories that fall under each main category
+• Extract key phrases and keywords that represent the content accurately
+• Maintain the original context and meaning from the source material
+• Do not interpret, summarize, or paraphrase the original content
+
+**Requirements:**
+• All extracted values must be key phrases or keywords from the conversation
+• All category names must be in lowercase format
+• All category names must use underscores instead of spaces
+• Do not modify, rephrase, or alter the original context
+• Use nested objects and arrays appropriately to represent hierarchical relationships
+• Do not include code blocks in the response
+• Do not add explanations, commentary, or additional text
+• Preserve the exact terminology used in the original conversation
+
+**Output Format:**
+• Output must be a JSON object structure
+• Wrap the entire JSON object in <information> tags
+• Use the following structure: <information>{"Category1": {"Subcategory1": ["item1", "item2"], "Subcategory2": "item3"}, "Category2": ["item4", "item5"]}</information>
+• Use nested objects for categories that contain subcategories
+• Use arrays for multiple items within subcategories
+• Use strings for single items within categories or subcategories"""
