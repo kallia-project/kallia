@@ -1,11 +1,11 @@
 name: kallia
 services:
   core:
-    build: .
+    image: overheatsystem/kallia:0.1.3
     container_name: core
     ports:
       - "8000:80"
     environment:
-      - KALLIA_PROVIDER_API_KEY=ollama
-      - KALLIA_PROVIDER_BASE_URL=http://localhost:11434/v1
-      - KALLIA_PROVIDER_MODEL=qwen2.5vl:32b
+      - KALLIA_PROVIDER_API_KEY=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
+      - KALLIA_PROVIDER_BASE_URL=https://openrouter.ai/api/v1
+      - KALLIA_PROVIDER_MODEL=qwen/qwen2.5-vl-32b-instruct
