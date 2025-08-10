@@ -1,6 +1,6 @@
 # Kallia
 
-[![Version](https://img.shields.io/badge/version-0.1.3-blue.svg)](https://github.com/kallia-project/kallia)
+[![Version](https://img.shields.io/badge/version-0.1.4-blue.svg)](https://github.com/kallia-project/kallia)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://python.org)
 [![Docker](https://img.shields.io/badge/docker-overheatsystem%2Fkallia-blue.svg)](https://hub.docker.com/r/overheatsystem/kallia)

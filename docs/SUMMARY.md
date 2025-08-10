@@ -4,14 +4,19 @@
 
 ## Overview
 
-- [💡 What we do](overview/what-we-do.md)
-- [✨ Our Features](overview/our-features.md)
+- [💡 Introduction](overview/introduction.md)
 
 ## Fundamentals
 
-- [🛠️ Getting set up](fundamentals/getting-set-up/README.md)
+- [🔧 Core Library](fundamentals/core.md)
+- [🌐 REST API](fundamentals/rest-api.md)
+- [🐳 Docker Setup](fundamentals/docker.md)
 
 ## Use Cases
 
-- [📄 Document Chunking](use-cases/document-chunking.md)
-- [🧠 Memory Generation](use-cases/memory-generation.md)
+- [❓ Document Q&A](use-cases/document-qa.md)
+- [📝 Form Filling](use-cases/form-filling.md)
+
+## Advanced
+
+- [📊 Benchmarks](advanced/benchmarks.md)

@@ -1,73 +1,120 @@
-# � Welcome to Kallia
+# Kallia Documentation
 
-{% hint style="info" %}
-**Kallia** is a semantic document processing library that converts documents into intelligent semantic chunks while preserving context and semantic relationships.
-{% endhint %}
+Welcome to the Kallia documentation! Kallia is an advanced semantic document processing library that transforms documents into intelligent, queryable knowledge bases.
 
-## Overview
+## What is Kallia?
 
-Kallia is a powerful semantic document processing library designed to transform documents into meaningful, contextually-aware chunks. Built with modern AI and machine learning techniques, Kallia specializes in extracting and organizing content while maintaining the semantic relationships that make information truly useful.
+Kallia is a powerful document processing framework that:
 
-```mermaid
-graph TD
-    A[📄 Documents] --> B[🔄 Kallia Processing]
-    B --> C[🧠 Intelligent Semantic Chunks]
-    C --> D[💭 Conversational Memories]
-    C --> E[🎯 Context Preservation]
-    C --> F[🔗 Semantic Relationships]
+- **Converts documents to structured markdown** with intelligent parsing using Docling
+- **Generates semantic chunks** optimized for retrieval and understanding
+- **Creates contextual memories** that capture conversation history and insights
+- **Provides RESTful APIs** for easy integration with FastAPI
+- **Supports interactive playground** with Chainlit for document Q&A
+- **Handles multiple document formats** with extensible architecture
 
-    D --> G[🚀 RESTful API]
-    E --> G
-    F --> G
+## Quick Start
 
-    G --> H[🎮 Interactive Playground]
-    G --> I[❓ Q&A Systems]
+1. **Installation**: Set up Kallia using Docker or pip
+2. **Configuration**: Configure your environment variables
+3. **API Usage**: Start processing documents via REST API
+4. **Integration**: Integrate with your applications
 
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style G fill:#fff3e0
-    style H fill:#fce4ec
-    style I fill:#f1f8e9
+## Documentation Structure
+
+- **[Overview](overview/)** - Introduction and core concepts
+- **[Fundamentals](fundamentals/)** - Setup, API reference, and Docker deployment
+- **[Use Cases](use-cases/)** - Practical examples and implementations
+
+## Key Features
+
+### 🔄 Document Processing
+
+Transform any document into structured, searchable content with intelligent parsing and formatting using Docling library.
+
+### 🧠 Memory Generation
+
+Create contextual memories from conversation histories that understand relationships and provide intelligent insights.
+
+### 🔍 Semantic Chunking
+
+Break documents into meaningful chunks with summaries, questions, and answers optimized for retrieval and comprehension.
+
+### 🚀 RESTful API
+
+FastAPI-based service with comprehensive endpoints for document processing, chunking, and memory creation.
+
+### 🎮 Interactive Playground
+
+Chainlit-powered chat interface for real-time document Q&A with memory management and source citations.
+
+### 📊 Benchmark Performance
+
+![Benchmark Results](https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.4/benchmark/results.png)
+
+Proven superior performance with 4.6/5.0 mean score and 81% perfect score rate in comprehensive RAG evaluations.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11 or higher
+- Docker (optional, for containerized deployment)
+
+### Quick Installation
+
+```bash
+pip install kallia
 ```
 
-**Kallia converts documents into intelligent semantic chunks that preserve context and meaning, enabling better document understanding and processing for AI applications through our comprehensive API and playground interface.**
+### Docker Deployment
 
-## Key Capabilities
+```bash
+# Core API Service
+cd kallia/core
+docker-compose up -d
 
-- **🔄 Document Processing**: Convert PDFs and other documents to structured markdown
-- **🧠 Semantic Chunking**: Intelligent content segmentation that respects document structure
-- **💭 Memory Generation**: Create long-term and short-term memories from conversations
-- **🚀 RESTful API**: FastAPI-based service with comprehensive endpoints
-- **🎮 Interactive Playground**: Chainlit-powered chat interface for document Q&A
-- **🐳 Docker Support**: Containerized deployment for easy scaling
+# Interactive Playground
+cd kallia/playground
+docker-compose up -d
+```
 
-## Quick links
+## Core Concepts
 
-{% content-ref url="overview/what-we-do.md" %}
-[what-we-do.md](overview/what-we-do.md)
-{% endcontent-ref %}
+### Document Processing Pipeline
 
-{% content-ref url="overview/our-features.md" %}
-[our-features.md](overview/our-features.md)
-{% endcontent-ref %}
+1. **Input**: PDF documents (extensible to other formats)
+2. **Conversion**: Document to structured markdown using Docling
+3. **Chunking**: Semantic segmentation with AI-powered analysis
+4. **Output**: Structured chunks with summaries, Q&A pairs
 
-## Get Started
+### Memory System
 
-We've put together some helpful guides for you to get setup with our product quickly and easily.
+- **Short-term Memory**: Recent conversation context
+- **Long-term Memory**: Extracted insights and patterns
+- **Contextual Understanding**: Relationship mapping between conversations
 
-{% content-ref url="fundamentals/getting-set-up/" %}
-[getting-set-up](fundamentals/getting-set-up/)
-{% endcontent-ref %}
+### API Architecture
 
-## Use Cases
+- **RESTful Design**: Standard HTTP methods and status codes
+- **Pydantic Models**: Type-safe request/response validation
+- **Error Handling**: Comprehensive exception management
+- **Scalable**: Designed for production deployment
 
-Explore practical applications of Kallia's document processing capabilities.
+## Next Steps
 
-{% content-ref url="use-cases/document-chunking.md" %}
-[document-chunking.md](use-cases/document-chunking.md)
-{% endcontent-ref %}
+- Read the [Introduction](overview/introduction.md) for detailed concepts
+- Check the [API Reference](fundamentals/rest-api.md) for endpoint documentation
+- Explore [Use Cases](use-cases/) for practical implementations
+- Try the [Docker Setup](fundamentals/docker.md) for quick deployment
 
-{% content-ref url="use-cases/memory-generation.md" %}
-[memory-generation.md](use-cases/memory-generation.md)
-{% endcontent-ref %}
+## Support
+
+For issues, questions, or contributions:
+
+- GitHub: [https://github.com/kallia-project/kallia](https://github.com/kallia-project/kallia)
+- Email: [ck@kallia.net](mailto:ck@kallia.net)
+
+---
+
+Built with ❤️ for intelligent document processing
