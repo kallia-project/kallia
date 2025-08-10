@@ -18,7 +18,7 @@ extraction, knowledge base construction, and semantic search implementations.
 Author: CK
 GitHub: https://github.com/kallia-project/kallia
 License: Apache License 2.0
-Version: 0.1.3
+Version: 0.1.4
 """
 
 import requests
@@ -53,6 +53,43 @@ def memories(request: Models.MemoriesRequest):
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
+@app.post("/markdownify", response_model=Models.MarkdownifyResponse)
+def markdownify(request: Models.MarkdownifyRequest):
+    file_format = Utils.get_extension(request.url)
+    if file_format not in Constants.SUPPORTED_FILE_FORMATS:
+        logger.error("Invalid File Format")
+        raise HTTPException(status_code=400, detail="Invalid File Format")
+
+    try:
+        markdown_content = Documents.to_markdown(
+            source=request.url,
+            page_number=request.page_number,
+            temperature=request.temperature,
+            max_tokens=request.max_tokens,
+            include_image_captioning=request.include_image_captioning,
+        )
+        return Models.MarkdownifyResponse(markdown=markdown_content)
+
+    except Exception as e:
+        logger.error(f"Internal Server Error {e}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
+
+
+@app.post("/chunks", response_model=Models.ChunksResponse)
+def chunks(request: Models.ChunksRequest):
+    try:
+        semantic_chunks = Chunker.create(
+            text=request.text,
+            temperature=request.temperature,
+            max_tokens=request.max_tokens,
+        )
+        return Models.ChunksResponse(chunks=semantic_chunks)
+
+    except Exception as e:
+        logger.error(f"Internal Server Error {e}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
+
+
 @app.post("/documents", response_model=Models.DocumentsResponse)
 def documents(request: Models.DocumentsRequest):
     file_format = Utils.get_extension(request.url)
@@ -66,6 +103,7 @@ def documents(request: Models.DocumentsRequest):
             page_number=request.page_number,
             temperature=request.temperature,
             max_tokens=request.max_tokens,
+            include_image_captioning=request.include_image_captioning,
         )
         semantic_chunks = Chunker.create(
             text=markdown_content,

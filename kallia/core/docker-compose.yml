@@ -1,7 +1,7 @@
 name: kallia
 services:
   core:
-    image: overheatsystem/kallia:0.1.3
+    build: .
     container_name: core
     ports:
       - "8000:80"

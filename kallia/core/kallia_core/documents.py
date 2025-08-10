@@ -13,6 +13,7 @@ class Documents:
         page_number: int = 1,
         temperature: float = 0.0,
         max_tokens: int = 8192,
+        include_image_captioning=False,
     ) -> str:
         pipeline_options = PdfPipelineOptions()
         pipeline_options.do_ocr = False
@@ -28,7 +29,9 @@ class Documents:
         converted_doc = converter.convert(source, page_range=page_range).document
         markdown_serializer = MarkdownDocSerializer(
             doc=converted_doc,
-            picture_serializer=ImageCaptionSerializer(temperature, max_tokens),
+            picture_serializer=ImageCaptionSerializer(
+                temperature, max_tokens, include_image_captioning
+            ),
             table_serializer=UnorderedListSerializer(temperature, max_tokens),
         )
         return markdown_serializer.serialize().text

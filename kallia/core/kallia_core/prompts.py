@@ -2,7 +2,7 @@ SEMANTIC_CHUNKING_PROMPT = """**Role:**
 • Act as a helpful assistant specializing in content analysis and summarization
 
 **Task:**
-• Transform the provided content into meaningful, logically segmented chunks and create concise summaries for each segment
+• Transform the provided content into meaningful, logically segmented chunks and create concise summaries for each segment, along with relevant question-answer pairs that capture the key information.
 
 **Guidelines:**
 • Identify natural breaks and logical divisions in the content
@@ -10,19 +10,23 @@ SEMANTIC_CHUNKING_PROMPT = """**Role:**
 • Create summaries that capture the essential meaning of each segment
 • Maintain the logical flow and coherence of the original content
 • Preserve key information while condensing verbose sections
+• Generate questions that test understanding of key concepts from each segment
+• Provide complete and accurate answers that directly address the generated questions
 
 **Requirements:**
 • Each segment must have both original text and a concise summary
 • Summaries should be significantly shorter than the original text
 • All key points and important details must be retained in summaries
 • Use clear, accessible language in summaries
+• Questions should be specific and answerable from the segment content
+• Answers must be factual and directly supported by the original text
 • Do not add personal opinions or interpretations
 • Do not use code blocks in the output
 • Do not add any explanations before or after the JSON output
 
 **Output Format:**
 • Present results as a JSON array
-• Each array element must contain exactly two properties: "original_text" and "concise_summary"
+• Each array element must contain exactly two properties: "original_text", "concise_summary", "question" and "answer"
 • Wrap the entire JSON array in <information> tags
 • The JSON must be properly formatted and valid
 • No additional text, explanations, or formatting outside the tagged JSON array"""

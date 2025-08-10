@@ -1,0 +1,702 @@
+[
+  {
+    "question": "2025年香港中學文憑考試（文憑試）的甲類科目筆試於何時開始？",
+    "true_answer": "2025年4月1日開始。",
+    "generated_answer": "2025年香港中學文憑考試（文憑試）的甲類科目筆試於2025年4月1日開始。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the 2025年香港中學文憑考試（文憑試）的甲類科目筆試於2025年4月1日開始，这与参考答案“2025年4月1日開始”完全一致。该信息准确无误，符合官方公布的时间安排。因此，响应在事实准确性、正确性和完整性方面均达到最高标准。"
+  },
+  {
+    "question": "考生在文憑試前需要使用什麼應用程式進行自我簽到？",
+    "true_answer": "考生需要使用「報到易」手機應用程式進行自我簽到。",
+    "generated_answer": "考生在文憑試前需要使用「報到易」應用程式進行自我簽到。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response correctly identifies the application as「報到易」, which matches the reference answer. It accurately states that candidates need to use this app for self-check-in before the HKDSE. The only minor difference is the omission of the word \"手機\" (mobile) before \"應用程式\", but this does not affect the factual correctness or accuracy of the information. The core content—identifying the correct app for self-check-in—is fully accurate and aligns with the reference answer."
+  },
+  {
+    "question": "考生除透過「報到易」手機應用程式進行自我簽到程序外，仍須攜帶哪些文件？",
+    "true_answer": "考生仍須攜備准考證正本及身份證正本（或另附有相片的有效身份證明文件）於每節考試作查核之用。",
+    "generated_answer": "考生除透過「報到易」手機應用程式進行自行簽到程序外，仍須攜帶准考證正本及身分證正本（或另一附有相片的有效身分證明文件）於每節考試作查核之用。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately states that candidates must still carry the original admission ticket (准考證正本) and original identification card (身分證正本) or another photo-bearing valid identification document for verification during each examination session. This matches the reference answer exactly in content and factual accuracy. The minor differences in phrasing—such as using \"自行簽到程序\" instead of \"自我簽到程序\" and adding \"於每節考試作查核之用\"—do not alter the factual correctness and are consistent with the reference. The response fully aligns with the reference answer in meaning and precision."
+  },
+  {
+    "question": "考生在2025年香港中學文憑考試中，如果未能出示准考證及身份證明文件，會有什麼後果？",
+    "true_answer": "未能出示有關文件的考生，其答卷可能不獲考評局評閱。",
+    "generated_answer": "若考生未能出示准考證正本及身分證正本（或另一附有相片的有效身分證明文件），試場主任可拒絕其進入試場，其答卷可能不獲考評局接受。如身分未能於現場核實，考生須於考試完結後於試場內填寫報告書及拍照（如需要），以作試後核對身分之用，否則其答卷將不獲考評局評閱。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response provides detailed information about the consequences of not presenting the examination permit and identity documents, including the possibility of being denied entry to the examination hall, the requirement to complete a report form and possibly take a photo for post-examination identity verification, and the risk that the examination paper may not be marked. While these details are consistent with the official procedures of the Hong Kong Diploma of Secondary Education Examination (HKDSE), the reference answer only states that the candidate's paper may not be marked by the exam board, which is the core fact. The additional procedural details in the response, though accurate, go beyond the scope of the reference answer and are not required for a score of 5. However, since the response does not contain any inaccuracies and aligns with the reference answer in the key point—namely, that the paper may not be marked—the response remains factually correct and fully aligned with the reference. Therefore, the response meets the criteria for a score of 5."
+  },
+  {
+    "question": "自修生申請甲類科目非語文科目的積分覆核費用是多少？",
+    "true_answer": "$256",
+    "generated_answer": "自修生申請甲類科目非語文科目的積分覆核費用是 $256。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the fee for self-study candidates applying for the review of marks in non-language subjects of Type A is $256, which exactly matches the reference answer. The information provided is precise, accurate, and directly aligns with the correct factual data. There are no inaccuracies or extraneous details, and the response fully meets the expected standard."
+  },
+  {
+    "question": "乙類科目的積分覆核費用是多少？",
+    "true_answer": "學校考生為 $215，自修生為 $256。",
+    "generated_answer": "乙類科目的積分覆核費用是每科 $215（學校考生）及 $256（自修生）。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately states the correct fees for the乙類科目的積分覆核, specifying $215 for school candidates and $256 for self-study candidates, which fully matches the reference answer. The information is presented clearly and precisely, with no extraneous or incorrect details. The response is factually correct and aligns exactly with the reference answer in both content and structure."
+  },
+  {
+    "question": "覆核成績申請中，甲類科目的重閱答卷費用是多少（非語文科目）？",
+    "true_answer": "學校考生：$855，自修生：$1,024",
+    "generated_answer": "甲類科目中，非語文科目的重閱答卷費用為 $1,024。",
+    "evaluation_score": 3,
+    "evaluation_feedback": "Feedback: The response states that the re-marking fee for non-language subjects in Category A is $1,024, which is accurate for self-taught candidates (self-registered candidates). However, the reference answer specifies two distinct fees: $855 for school candidates and $1,024 for self-registered candidates. The response fails to mention the fee for school candidates and does not clarify that the $1,024 applies specifically to self-registered candidates. While the provided figure is factually correct for one group, the omission of the school candidate fee and lack of context make the response incomplete and potentially misleading. Therefore, it is not fully aligned with the reference answer, which includes both categories."
+  },
+  {
+    "question": "中國語文科分部的重閱答卷費用是多少？",
+    "true_answer": "學校考生：$615，自修生：$737",
+    "generated_answer": "根據提供的資訊，中國語文科分部（口試除外）的重閱答卷費用為每科 $1,024。",
+    "evaluation_score": 1,
+    "evaluation_feedback": "Feedback: The response states that the re-marking fee for Chinese Language Paper (excluding oral examination) is $1,024 per subject, which is incorrect according to the reference answer. The reference answer clearly specifies different fees for school candidates ($615) and private candidates ($737), neither of which matches the figure provided in the response. The response fabricates a fee amount not present in the reference, making it factually inaccurate. While the response attempts to address the question by providing a fee, the specific value is entirely wrong, resulting in a significant factual error."
+  },
+  {
+    "question": "「音樂 1B」的考試時間是甚麼時候？",
+    "true_answer": "4月23日（星期三），10:45-12:15",
+    "generated_answer": "根據提供的資料，沒有提及「音樂 1B」的考試時間。",
+    "evaluation_score": 1,
+    "evaluation_feedback": "Feedback: The response states that the provided information does not mention the examination time for \"音樂 1B,\" which is factually incorrect according to the reference answer. The reference answer clearly provides the exact date and time: 4月23日（星期三），10:45-12:15. Since the response denies the existence of this information when it is indeed present in the reference, it fails to align with the factual content. Therefore, the response is not accurate or factual."
+  },
+  {
+    "question": "中國文學（一）的考試時間是什麼？",
+    "true_answer": "4月22日，8:30-10:30",
+    "generated_answer": "根據提供的資料，中國文學（一）的考試時間未有明確列出。",
+    "evaluation_score": 1,
+    "evaluation_feedback": "Feedback: The response states that the examination time for Chinese Literature (I) is not clearly listed in the provided information. However, the reference answer clearly specifies the correct time as \"4月22日，8:30-10:30.\" Since the response fails to provide the accurate and factual information that is explicitly available in the reference answer, and instead claims the information is missing when it is not, the response is factually incorrect. Therefore, it does not meet the criteria for a score of 5."
+  },
+  {
+    "question": "體育（二）的考試時間是什麼時候？",
+    "true_answer": "4月23日（星期三）11:30-12:45",
+    "generated_answer": "根據提供的資料，並未提及體育科（二）的具體考試時間。",
+    "evaluation_score": 2,
+    "evaluation_feedback": "Feedback: The response states that the provided information does not mention the specific exam time for Physical Education (II), which is accurate based on the given context. However, the reference answer clearly provides a specific time: April 23 (Wednesday) 11:30–12:45. Since the response fails to include this correct and specific information, it does not align with the reference answer, which is the expected factual content. The response, while truthful in saying the data was not provided, contradicts the reference answer by implying no information is available when, in fact, the reference answer gives a precise time. Therefore, the response is not factually aligned with the reference answer, leading to a score below 5."
+  },
+  {
+    "question": "後備考試的日期是什麼？",
+    "true_answer": "5月2日（星期五）和5月3日（星期六）",
+    "generated_answer": "後備考試日期未在上下文中明確列出，僅提及考生應預留整個考試時段包括上述列出的後備考試日期。",
+    "evaluation_score": 1,
+    "evaluation_feedback": "Feedback: The response states that the backup exam dates are not explicitly listed in the context, which contradicts the reference answer that clearly provides the dates as May 2 (Friday) and May 3 (Saturday). The response fails to provide the correct dates and instead avoids giving a factual answer by claiming they are not mentioned, while the reference answer definitively states them. This makes the response incorrect and inaccurate according to the reference."
+  },
+  {
+    "question": "健康管理與社會關懷（一）的考試時間是什麼時候？",
+    "true_answer": "4月11日（星期五）8:30-10:30",
+    "generated_answer": "健康管理與社會關懷（一）的考試時間是2025年4月11日（星期五）上午8:30至10:30。",
+    "evaluation_score": 4,
+    "evaluation_feedback": "Feedback: The response states the exam time as \"2025年4月11日（星期五）上午8:30至10:30\", which includes an additional year (2025) not present in the reference answer. The reference answer only specifies \"4月11日（星期五）8:30-10:30\", indicating that the year is either irrelevant or not required in the correct answer. While the date, day, and time range are accurate, the inclusion of the year (2025) introduces unnecessary and potentially incorrect information, as the context does not confirm this year. Since the reference answer does not include the year, and the response adds it without justification, it deviates from the exact format and content of the reference. However, the core factual elements (date, day, time) are correct. The deviation is minor but still present, making it less precise than the reference."
+  },
+  {
+    "question": "地理（二）的考試時間是什麼時候？",
+    "true_answer": "四月二十四日（星期四），12:00-13:15",
+    "generated_answer": "地理（二）的考試時間是4月24日（星期四）12:00 - 13:15。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response provides the correct date (4月24日), day of the week (星期四), and time range (12:00 - 13:15), which fully matches the reference answer. The format is slightly different (using \"地理（二）的考試時間是\" as a lead-in), but this does not affect the factual accuracy. The information is precise, consistent with the reference, and contains no errors."
+  },
+  {
+    "question": "在數學延伸部分的單元二中，考生答題時應如何表示數值答案？",
+    "true_answer": "除特別指明外，數值答案須用真確值，或用四位小數表示。",
+    "generated_answer": "在數學延伸部分的單元二中，考生答題時應使用真確值表示數值答案。",
+    "evaluation_score": 4,
+    "evaluation_feedback": "Feedback: The response states that考生 should use \"真確值\" (exact value) to represent numerical answers, which aligns with part of the reference answer. However, the reference answer also specifies that, unless otherwise indicated, numerical answers can be expressed as exact values or rounded to four decimal places. The response omits the crucial detail about the option to use four decimal places, which is a key component of the correct instruction. Therefore, while the response is partially accurate, it is incomplete and fails to fully capture the complete requirement outlined in the reference answer."
+  },
+  {
+    "question": "在「公民與社會發展」科目的考試中，考生應如何回答多項選擇題？",
+    "true_answer": "考生應以HB鉛筆塗滿與答案相應的圓圈。",
+    "generated_answer": "在「公民與社會發展」科目的考試中，考生應在多項選擇題答題紙上作答，使用HB鉛筆塗滿與答案相應的圓圈，並在答題紙上填寫考生編號、姓名及簽署，貼上電腦條碼貼紙。錯誤答案可用潔淨膠擦徹底擦去，但不可在一道題中填畫多於一個答案，且不可將答題紙摺疊或刺穿。畫在試題簿上的答案不會被評閱。",
+    "evaluation_score": 4,
+    "evaluation_feedback": "Feedback: The response includes several details not mentioned in the reference answer, such as filling in the candidate number, name, signing, attaching barcode stickers, erasing errors, and avoiding folding or piercing the answer sheet. While these details may be relevant in a broader examination context, they are not part of the reference answer, which focuses solely on the essential instruction: using an HB pencil to fill in the corresponding circle. The reference answer is concise and directly aligned with the core requirement. The provided response, although factually correct in parts, exceeds the scope of the reference answer by adding extraneous information. Since the rubric evaluates whether the response is correct, accurate, and factual based on the reference answer, and the reference answer is narrowly focused on the act of filling in the circle with an HB pencil, the response deviates from the reference by including non-essential details. However, the core instruction (using HB pencil to fill the circle) is correct and consistent with the reference. Despite the added details, the response remains factually accurate and does not contain any incorrect information. Therefore, it is mostly aligned with the reference, though not perfectly concise."
+  },
+  {
+    "question": "在倫理與宗教科目中，考生若選擇單元二：基督宗教，是否可以攜帶開卷考試時認可的聖經版本？",
+    "true_answer": "是的，考生可以攜帶本局方認可的新舊約聖經版本進行開卷考試。",
+    "generated_answer": "是，考生若選擇單元二：基督宗教，可以攜帶開卷考試時認可的聖經版本入場考試。",
+    "evaluation_score": 4,
+    "evaluation_feedback": "Feedback: The response states that考生 can bring the Bible version recognized for open-book exams, which aligns with the reference answer in terms of the general idea. However, it lacks specificity regarding the authority or source of the recognized version—namely, that it must be the version approved by the examining authority (e.g., \"本局方認可\" as stated in the reference answer). The response omits this crucial detail, which is essential for accuracy and completeness. While the core fact is correct, the omission of the official endorsement (i.e., \"本局方認可\") reduces its factual precision. Therefore, the response is mostly correct but not fully accurate in capturing all essential details from the reference answer."
+  },
+  {
+    "question": "經濟科目的試卷二包括哪些部分？",
+    "true_answer": "經濟科目的試卷二包括甲、乙及丙部。甲、乙兩部試題均須全部作答，丙部選答一題。",
+    "generated_answer": "經濟科目的試卷二包括甲、乙及丙部。甲、乙兩部試題均須全部作答，丙部需選答一題。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately states that the Economics Paper II consists of Parts A, B, and C, and correctly specifies that candidates must answer all questions in Parts A and B, and choose one question to answer from Part C. The wording is nearly identical to the reference answer, with only a minor difference in punctuation (using \"一題\" instead of \"一題\" in the reference, which is a non-issue as both are acceptable). There are no factual inaccuracies or errors in the information provided. The response matches the reference answer in all key details and is fully consistent with the correct facts."
+  },
+  {
+    "question": "健康管理與社會關懷科目中，乙部答案應寫在哪裡？",
+    "true_answer": "乙部答案應寫在DSE(D)答題簿內。",
+    "generated_answer": "在健康管理與社會關懷科目中，乙部的答案須寫在試題答題簿內。",
+    "evaluation_score": 1,
+    "evaluation_feedback": "Feedback: The response states that乙部答案應寫在試題答題簿內, which is incorrect according to the reference answer. The correct location is DSE(D)答題簿內, as specified in the reference answer. The response fails to provide the precise and accurate location required by the reference answer, substituting \"試題答題簿\" for the correct \"DSE(D)答題簿\". This inaccuracy renders the response factually incorrect."
+  },
+  {
+    "question": "音樂科卷四乙選答部分，若考生參與實習考試，需要準備什麼？",
+    "true_answer": "若考生參與實習考試，需要為主考員準備一份將演奏或演唱的樂譜或歌詞。",
+    "generated_answer": "考生需為主考員準備一份將演奏或演唱的樂譜或歌詞。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response correctly states that candidates need to prepare a copy of the sheet music or lyrics to be performed or sung for the examiner, which aligns exactly with the reference answer. The wording is accurate, clear, and matches the information provided in the reference answer without any discrepancies or inaccuracies. The response fully satisfies the requirement of the question and is factually sound."
+  },
+  {
+    "question": "音樂科卷四丙選答部分，申請豁免應試的考生若需更新其考獲的證書，最新更新認可資格的截止日期為何？",
+    "true_answer": "2024年12月16日或之前。",
+    "generated_answer": "2024年12月16日",
+    "evaluation_score": 4,
+    "evaluation_feedback": "Feedback: The response states \"2024年12月16日\", which is factually correct in terms of the date. However, the reference answer specifies \"2024年12月16日或之前\", indicating that the deadline includes the date itself and all dates before it. The response omits the crucial phrase \"或之前\", which means the answer is incomplete in conveying the full scope of the deadline. While the date is accurate, the omission of the temporal inclusivity weakens its correctness. Therefore, the response is not fully aligned with the reference answer in precision and completeness."
+  },
+  {
+    "question": "音樂科考試中，哪几种檔案格式是被允許提交的音效檔案？",
+    "true_answer": "MP3、WMA及WAV（不接受MIDI檔）",
+    "generated_answer": "在音樂科考試中，被允許提交的音效檔案格式為：MP3、WMA 及 WAV。",
+    "evaluation_score": 4,
+    "evaluation_feedback": "Feedback: The response correctly identifies MP3, WMA, and WAV as allowed audio file formats for the music exam, which aligns with the reference answer. However, it omits the crucial detail that MIDI files are not accepted, which is explicitly mentioned in the reference answer. While the listed formats are accurate, the absence of the restriction on MIDI files makes the response incomplete. Despite this omission, the core information provided is correct and factual."
+  },
+  {
+    "question": "音樂科卷三、卷四甲和卷四丙的呈交細則可以在哪裡找到？",
+    "true_answer": "www.hkeaa.edu.hk/tc/hkdse/assessment/subject_information/category_a_subjects/hkdse_subj.html?A2&2&18_6",
+    "generated_answer": "音樂科卷三、卷四甲和卷四丙的呈交細則可於以下網址找到：  \nwww.hkeaa.edu.hk/tc/hkdse/assessment/subject_information/category_a_subjects/hkdse_subj.html?A2&2&18_6",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response provides the exact same URL as the reference answer, which is the correct and accurate source for the submission guidelines of Music Paper III, Paper IV Part A, and Paper IV Part C. The information is precisely matched, and there are no additions, omissions, or inaccuracies. The response fully aligns with the reference answer in both content and correctness."
+  },
+  {
+    "question": "視覺藝術科的考生在考試時，不可以使用哪些物品？",
+    "true_answer": "視覺藝術科的考生在考試時，不可以使用：英文及中文字典（包括字典摘錄）、慢乾性材料（如：油畫顏料）、慢乾劑、危險性物料（如：罐裝噴漆、噴筆、噴裝固定液等）、火燒及煙薰技法的器材。",
+    "generated_answer": "視覺藝術科的考生在考試時，不可以使用以下物品：\n\n- 英文及中文字典（包括字典摘錄）\n- 慢乾性材料（如油畫顏料）\n- 慢乾劑\n- 危險性物料（如罐裝噴漆、噴筆、噴裝固定液等）\n- 火燒及煙薰技法的器材\n- 非由考評局提供的白畫紙或宣紙（相關部分通常會被給予零分）\n- 整張約 A2 大小的紙張或物料覆蓋於提供的白畫紙上作答\n- 修剪考評局提供的畫紙\n- 在白畫紙或白書紙上寫上姓名或身分證明文件號碼\n- 携帶危險物品及燃燒工具進入試場（會被取消考試資格）",
+    "evaluation_score": 4,
+    "evaluation_feedback": "Feedback: The response includes several items that are not mentioned in the reference answer, such as restrictions on non-exam-provided paper, trimming the provided paper, writing names on the paper, and carrying burning tools. While the core prohibited items like dictionaries, slow-drying materials, hazardous substances, and fire-related techniques are correctly listed, the additional restrictions—particularly those about paper usage, writing personal information, and carrying burning tools—are not part of the reference answer and may not be standard rules in the actual exam context. Since the reference answer only lists a specific set of prohibited items and the response adds unverified or extraneous constraints, it cannot be considered completely accurate or factual in alignment with the reference. However, the main prohibited items are correctly included, indicating partial correctness. Therefore, the response is mostly correct, accurate, and factual, but includes unsupported or extraneous information that deviates from the reference."
+  },
+  {
+    "question": "什麼是考生在「科技與生活（服裝、成衣與紡織）」考試中可以攜帶的輔助工具？",
+    "true_answer": "考生可以攜帶縮小身形紙板及1/5比例的基本紙樣（包括上身、袖、半截裙及褲）以輔助答題。",
+    "generated_answer": "考生在「科技與生活（服裝、成衣與紡織）」考試中可攜帶的輔助工具包括：  \n- 顏色筆  \n- 縮小身形紙板  \n- 1/5 比例的基本紙樣（上身、袖、半截裙及褲）  \n\n這些工具必須符合官方認可的樣板，且在1/5比例的基本紙樣上不得貼上標籤或寫上任何文字。",
+    "evaluation_score": 4,
+    "evaluation_feedback": "Feedback: The response includes accurate information regarding the permitted tools in the \"Technology and Life (Apparel, Garment, and Textile)\" examination, specifically mentioning the approved 1/5 scale basic patterns (upper body, sleeves, half-skirt, and pants), which aligns with the reference answer. It also correctly states that the tools must be officially recognized and not labeled or marked—this detail, while not explicitly in the reference answer, does not contradict it and adds relevant context. However, the inclusion of \"color pens\" is not mentioned in the reference answer and may not be permitted according to official guidelines, which could render this part inaccurate. Since the reference answer only explicitly lists the \"reduced body form cardboard\" and the \"1/5 scale basic patterns,\" the addition of color pens introduces an unverified and potentially incorrect element. Therefore, while most of the response is accurate, the inclusion of color pens—without confirmation from the reference—weakens the factual correctness. Despite this, the core information matches the reference answer closely."
+  },
+  {
+    "question": "科技與生活（服裝、成衣與紡織）考試中，考生可攜帶的縮小身形紙板及1/5比例基本紙樣的認可樣板上載於何處？",
+    "true_answer": "認可樣板已上載到本科網頁（www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/tl/HKDSE_TL_FC_Tsamples.pdf）。",
+    "generated_answer": "認可樣板上載於本科網頁：www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/tnl/HKDSE_TL_FCsamples.pdf",
+    "evaluation_score": 4,
+    "evaluation_feedback": "Feedback: The response correctly identifies that the认可樣板 is uploaded to the subject webpage, which aligns with the reference answer. However, the URL provided in the response is slightly different from the one in the reference answer: it uses \"tnl\" instead of \"tl\" in the path, and the filename is \"HKDSE_TL_FCsamples.pdf\" instead of \"HKDSE_TL_FC_Tsamples.pdf\". These discrepancies—particularly the incorrect folder name and an extra \"F\" in the filename—make the URL inaccurate. Although the general location (the webpage) is correct, the specific file path is not exact. This level of inaccuracy prevents the response from being fully correct and factual according to the reference answer."
+  },
+  {
+    "question": "在科技與生活（服裝、成衣與紡織）考試中，男裝中碼的袖長是多少厘米？",
+    "true_answer": "男裝中碼的袖長是66厘米。",
+    "generated_answer": "在科技與生活（服裝、成衣與紡織）考試中，男裝中碼的袖長是66厘米。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the sleeve length of men's medium size is 66 centimeters, which matches the reference answer exactly. The information provided is accurate, factual, and directly corresponds to the correct answer. There are no inaccuracies, irrelevant details, or deviations from the reference. The response is concise and precisely addresses the question without unnecessary elaboration."
+  },
+  {
+    "question": "在科技與生活（服裝、成衣與紡織）考試中，女裝中碼的臀圍是多少厘米？",
+    "true_answer": "女裝中碼的臀圍是88厘米。",
+    "generated_answer": "在科技與生活（服裝、成衣與紡織）考試中，女裝中碼的臀圍是88厘米。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the hip circumference of a medium-sized women's garment is 88 centimeters, which matches the reference answer exactly. The information provided is accurate and factual, directly aligning with the expected answer. There is no extraneous or incorrect information. The response is concise and directly addresses the question without deviation."
+  },
+  {
+    "question": "自修生須在何時將作品集交往香港考試及評核局？",
+    "true_answer": "自修生須在2025年1月10及11日將作品集交往香港考試及評核局。",
+    "generated_answer": "自修生須在2025年1月10日及11日將作品集交往香港考試及評核局。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response is nearly identical to the reference answer, with only a minor discrepancy in punctuation. The reference answer uses \"10及11\" while the response uses \"10日及11日\". However, the inclusion of \"日\" in the response is not incorrect, as it is a common and acceptable way to write dates in Chinese (e.g., \"10日\" meaning \"10th day\"). The date, the action (submitting the portfolio), and the recipient (Hong Kong Examinations and Assessment Authority) are all correctly stated. The response is factually accurate and matches the reference answer in meaning and intent."
+  },
+  {
+    "question": "香港考試及評核局文憑試快線網誌的地址是什麼？",
+    "true_answer": "https://blog.hkeaa.edu.hk/",
+    "generated_answer": "香港考試及評核局文憑試快線網誌的地址是：https://blog.hkeaa.edu.hk/",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response provides the correct and accurate address for the Hong Kong Examinations and Assessment Authority DSE Fast Track Blog, which is https://blog.hkeaa.edu.hk/. This matches the reference answer exactly and contains no extraneous or incorrect information. The formatting is clear and directly answers the question without deviation."
+  },
+  {
+    "question": "考評局何時上載「考生手冊」至網頁？",
+    "true_answer": "2024年12月中旬",
+    "generated_answer": "Context 中未提供考評局上載「考生手冊」至網頁的具體日期，因此無法回答。",
+    "evaluation_score": 1,
+    "evaluation_feedback": "Feedback: The response states that the context does not provide the specific date when the Examinations Authority uploaded the \"Candidate Handbook\" to the website, and therefore it cannot answer. However, the reference answer clearly provides the correct date: \"2024年12月中旬\". Since the response fails to acknowledge or deliver this accurate information and instead claims the information is unavailable, it is factually incorrect in the context of the reference answer. The response does not align with the factual content provided in the reference answer, which indicates the date is known. Thus, the response is incorrect and inaccurate."
+  },
+  {
+    "question": "2025年香港文憑試的發放考試成績日期是什麼時候？",
+    "true_answer": "2025年7月16日（暫定）",
+    "generated_answer": "2025年香港文憑試的考試成績暫定於2025年7月16日發放。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the 2025年香港文憑試的考試成績暫定於2025年7月16日發放, which matches the reference answer of \"2025年7月16日（暫定）\" in both date and the inclusion of the \"暫定\" (tentative) status. The information is accurate, complete, and directly aligns with the reference answer. The response correctly conveys the key details without any factual errors or omissions."
+  },
+  {
+    "question": "2025年文憑試的覆核成績結果何時發放？",
+    "true_answer": "2025年8月13日（暫定）",
+    "generated_answer": "2025年文憑試的覆核成績結果發放時間如下：\n\n- **覆核成績程序**：約於2025年9月22日發放。\n- **答卷評分（重閱答卷）**：約於10月下旬或11月下旬發放（視乎申請日期）。",
+    "evaluation_score": 1,
+    "evaluation_feedback": "Feedback: The response provides two dates for the release of the 2025 DSE review results: September 22, 2025, for the review process, and late October or late November for the re-marking of scripts. However, the reference answer states that the result will be released on August 13, 2025 (tentative), which is significantly earlier than the dates mentioned in the response. The response is therefore factually incorrect in its timing, as it contradicts the official release date given in the reference answer. The information provided does not align with the correct timing, making the response inaccurate."
+  },
+  {
+    "question": "香港考試及評核局的修頓中心辦事處辦公時間是什麼時候？",
+    "true_answer": "星期一至星期五，上午8時30分至下午5時30分（星期六、星期日及公眾假期休息）。",
+    "generated_answer": "香港考試及評核局修頓中心辦事處的辦公時間是星期一至星期五上午8時30分至下午5時30分（星期六、星期日及公眾假期休息）。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately states the office hours of the Hong Kong Examinations and Assessment Authority's Shu Tung Centre office as Monday to Friday, 8:30 AM to 5:30 PM, with weekends and public holidays off, which fully aligns with the reference answer. The inclusion of the specific location (修頓中心辦事處) adds contextual detail but does not alter the factual correctness. The information is precise, complete, and consistent with the reference."
+  },
+  {
+    "question": "香港考試及評核局修頓中心辦事處的電話是多少？",
+    "true_answer": "3628 8860",
+    "generated_answer": "香港考試及評核局修頓中心辦事處的電話是 3628 8860。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response provides the correct phone number, 3628 8860, which matches the reference answer exactly. The information is accurate, factual, and directly answers the question without any extraneous or incorrect details. The format is appropriate and concise."
+  },
+  {
+    "question": "香港考試及評核局的新蒲崗辦事處地址是什麼？",
+    "true_answer": "九龍新蒲崗爵祿街17號地下，刊物組。",
+    "generated_answer": "香港考試及評核局的新蒲崗辦事處地址是：九龍新蒲崗爵祿街17號地下。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response provides the correct address for the Hong Kong Examinations and Assessment Authority's San Po Kong office: \"九龍新蒲崗爵祿街17號地下,\" which matches the reference answer exactly. However, the reference answer includes additional specific information—\"刊物組\" (Publications Division), which is not included in the response. Despite this omission, the core factual information—the address—is fully accurate and correct. The score rubric focuses on correctness, accuracy, and factualness, and since the response delivers the essential factual details without error, it meets the criteria for a score of 5. The absence of the supplementary detail does not compromise the factual accuracy of the address provided."
+  },
+  {
+    "question": "香港考試及評核局新蒲崗辦事處的傳真號碼是多少？",
+    "true_answer": "3628 8291",
+    "generated_answer": "香港考試及評核局新蒲崗辦事處的傳真號碼是 3628 8291。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response provides the fax number \"3628 8291\" for the Hong Kong Examinations and Assessment Authority's Shinpu Kung Office, which exactly matches the reference answer. The information is accurate, factual, and directly aligns with the expected correct answer. There are no discrepancies or inaccuracies in the content."
+  },
+  {
+    "question": "What are the colors of the Question-Answer Books for Part A, Part B1, and Part B2 of Paper 1 (Reading)?",
+    "true_answer": "Orange, blue, and green, respectively.",
+    "generated_answer": "The color of the Question-Answer Book for Part A of Paper 1 (Reading) is orange, for Part B1 is blue, and for Part B2 is green.",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately states the colors of the Question-Answer Books for each part of Paper 1 (Reading) as specified in the reference answer. It correctly identifies orange for Part A, blue for Part B1, and green for Part B2, matching the reference answer \"Orange, blue, and green, respectively.\" The information is factually correct, concise, and directly aligns with the expected answer."
+  },
+  {
+    "question": "What is the recommended time between Paper 1 and Paper 2 to allow for sufficient script collection?",
+    "true_answer": "60 minutes",
+    "generated_answer": "The context does not provide information about the recommended time between Paper 1 and Paper 2 for script collection.",
+    "evaluation_score": 1,
+    "evaluation_feedback": "Feedback: The response states that the context does not provide information about the recommended time between Paper 1 and Paper 2 for script collection. However, the reference answer clearly indicates that the correct and factual response is \"60 minutes.\" Since the response denies the availability of this factual information when it is indeed available and correctly stated in the reference, it is incorrect in asserting the absence of information. The response fails to provide the accurate, factual answer that is required. Therefore, the response is not correct, accurate, or factual based on the reference answer."
+  },
+  {
+    "question": "What are the two parts of the Writing paper, and what are the word counts for each part?",
+    "true_answer": "The Writing paper is divided into two parts: Part A, which requires a short, guided task of about 200 words, and Part B, which requires a longer, more open-ended task of about 400 words.",
+    "generated_answer": "The two parts of the Writing paper are:\n\n1. Part A (Practical Writing) – no specific word count mentioned in the context.\n2. Part B (Directed Writing) – no specific word count mentioned in the context.\n\nNote: The context does not provide the word counts for either part.",
+    "evaluation_score": 2,
+    "evaluation_feedback": "Feedback: The response incorrectly states that no specific word count is mentioned for either part of the Writing paper, which contradicts the reference answer that clearly specifies 200 words for Part A and 400 words for Part B. While the response correctly identifies the two parts (Part A: Practical Writing and Part B: Directed Writing), it fails to provide the accurate word counts as required. The note claiming the context does not provide the word counts is false, as the reference answer confirms these details. Therefore, the response is factually inaccurate in a key aspect."
+  },
+  {
+    "question": "How long will the recording last for the Listening component in Paper 3?",
+    "true_answer": "About 50 minutes",
+    "generated_answer": "The recording for the Listening component in Paper 3 will last for about 50 minutes.",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the recording for the Listening component in Paper 3 will last for about 50 minutes, which matches the reference answer of \"About 50 minutes.\" The wording is slightly different but conveys the same accurate information. The response is factually correct and aligns precisely with the reference answer in terms of content and accuracy."
+  },
+  {
+    "question": "What is the highest level that candidates can attain if they attempt Parts A and B2 in the English Language paper?",
+    "true_answer": "Level 5",
+    "generated_answer": "Level 5",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response \"Level 5\" matches exactly with the reference answer provided, which is \"Level 5\". The instruction asks for the highest level candidates can attain when attempting Parts A and B2 in the English Language paper, and the response correctly identifies Level 5 as that highest level. There is no deviation, inaccuracy, or omission. The answer is precise and fully aligned with the reference."
+  },
+  {
+    "question": "校本評核適用於哪些科目？",
+    "true_answer": "校本評核適用於香港中學文憑考試的以下科目：核心科目（中國語文及英國語文）和選修科目（生物、化學、中國文學、物理、科技與生活、視覺藝術、設計與應用科技、健康管理與社會關懷、資訊及通訊科技、英語文學）。",
+    "generated_answer": "校本評核適用於以下科目：\n\n**核心科目：**  \n- 中國語文  \n- 英國語文  \n\n**選修科目：**  \n- 生物  \n- 化學  \n- 中國文學  \n- 設計與應用科技  \n- 健康管理與社會關懷  \n- 資訊及通訊科技  \n- 英語文學  \n- 物理  \n- 科技與生活  \n- 視覺藝術",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately lists the subjects that are eligible for school-based assessment (校本評核) according to the reference answer. It correctly identifies the core subjects (中國語文 and 英國語文) and includes all the specified elective subjects: 生物, 化學, 中國文學, 設計與應用科技, 健康管理與社會關懷, 資訊及通訊科技, 英語文學, 物理, 科技與生活, and 視覺藝術. The information is presented clearly and matches the reference answer exactly in content and structure. There are no factual errors or omissions."
+  },
+  {
+    "question": "校本評核分數會被計算入哪個考試的成績？",
+    "true_answer": "香港中學文憑考試成績。",
+    "generated_answer": "校本評核分數會被計算入香港中學文憑考試的成績。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response correctly states that the school-based assessment (校本評核) scores are included in the Hong Kong Diploma of Secondary Education (HKDSE) examination results. This aligns precisely with the reference answer, which identifies \"香港中學文憑考試成績\" as the correct answer. The information provided is accurate, factual, and directly matches the expected response."
+  },
+  {
+    "question": "哪個委員會負責審議特殊需要考生的特別考試安排申請？",
+    "true_answer": "特殊需要考生事務委員會及學障考生事務委員會負責審議特殊需要考生的特別考試安排申請。",
+    "generated_answer": "「特殊需要考生事務委員會」及「學障考生事務委員會」負責審議特殊需要考生的特別考試安排申請。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately identifies the two committees responsible for审议特殊需要考生的特別考試安排申請, namely 「特殊需要考生事務委員會」及「學障考生事務委員會」, which matches the reference answer exactly in both content and wording. The information is correct, accurate, and factual, with no discrepancies or additional unsupported claims. The response fully aligns with the reference answer in terms of precision and completeness."
+  },
+  {
+    "question": "特殊需要考生的答卷是按照什麼標準評分的？",
+    "true_answer": "特殊需要考生的答卷會按照與其他考生相同的評分標準評分，但會因應考生的殘障情況給予適當的考慮。",
+    "generated_answer": "特殊需要考生的答卷會按照與其他考生相同的評分標準評分，但會因應考生的殘障情況給予適當的考慮。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately reflects the reference answer by stating that special needs candidates' scripts are graded according to the same standards as other candidates, with appropriate consideration given to their disability conditions. The wording is consistent with the reference answer, and there are no factual inaccuracies or deviations. The information provided is complete, correct, and fully aligned with the reference."
+  },
+  {
+    "question": "2025年文憑試中，考生若於哪一天或以後提出的嚴重逾期或新增特別考試安排申請將不獲接納？",
+    "true_answer": "2025年3月18日（即2025年4月1日筆試開始前的10個工作天）或以後所提出的申請將不獲接納。",
+    "generated_answer": "在2025年文憑試中，考生若於以下日期或以後提出的嚴重逾期或新增特別考試安排申請將不獲接納：\n\n- **筆試**：2025年3月18日或以後（即2025年4月1日筆試開始前的10個工作天）。\n- **口試**：2025年2月25日或以後。",
+    "evaluation_score": 2,
+    "evaluation_feedback": "Feedback: The response provides two dates—one for笔试 (written exams) and one for口试 (oral exams)—but the reference answer only specifies a single date: 2025年3月18日, which applies to all applications, including both written and oral exams. The response incorrectly states that oral exam applications submitted on or after 2025年2月25日 will not be accepted, which contradicts the reference answer. The reference answer does not mention any separate cutoff date for oral exams. Therefore, the response includes an inaccurate and unsupported claim about the oral exam deadline, making it factually incorrect."
+  },
+  {
+    "question": "2025年文憑試中，對於因學校或考生疏忽而遞交特別考試安排申請的截止日期是哪一天？",
+    "true_answer": "2025年1月9日。",
+    "generated_answer": "2025年1月9日",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response \"2025年1月9日\" exactly matches the reference answer provided, which is \"2025年1月9。\" The slight difference in punctuation (full-width period vs. no punctuation) does not affect the factual accuracy of the date. The date is correct, accurate, and fully aligned with the reference answer. Therefore, the response is completely correct, accurate, and factual."
+  },
+  {
+    "question": "根據香港考試及評核局的規定，獲延長作答時間的考生在考試期間的短暫休息時間，每45分鐘可以獲得多少分鐘的休息時間？",
+    "true_answer": "獲延長作答時間的考生，可於考試期間獲安排短暫休息時間（例如在90分鐘或以上之考試，每45分鐘獲安排5分鐘的休息時間）。",
+    "generated_answer": "根據香港考試及評核局的規定，獲延長作答時間的考生在考試期間的短暫休息時間，每45分鐘可以獲得5分鐘的休息時間。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that eligible candidates receive 5 minutes of rest every 45 minutes during the examination, which aligns with the reference answer's mention of \"every 45 minutes获安排5 minutes of rest time.\" The reference answer specifies that this applies to exams lasting 90 minutes or more, but the response does not include this context. However, the core factual claim—5 minutes of rest per 45 minutes—is accurate and consistent with the reference. While the response lacks some contextual detail (e.g., the 90-minute minimum duration), it does not contain any incorrect or misleading information. Therefore, it is fully accurate and factual as per the reference answer's key assertion."
+  },
+  {
+    "question": "有自閉症譜系障礙的考生在考試中可申請什麼特別安排？",
+    "true_answer": "有自閉症譜系障礙的考生可申請於涉及高階分析／理解的漫畫或複雜圖畫的試題加上文字標註／描述。",
+    "generated_answer": "有自閉症譜系障礙的考生可申請於涉及高階分析／理解的漫畫或複雜圖畫的試題加上文字標註／描述。此安排經專業判斷後作出，考生於考試開始前會獲發一份印有文字標註／描述的特別版試卷（一般以A3白紙雙面印製並摺成A4書冊）及一份普通版試卷。",
+    "evaluation_score": 4,
+    "evaluation_feedback": "Feedback: The response includes additional details not present in the reference answer, such as the format of the special edition test paper (A3 white paper folded into A4 booklet) and the provision of both a special and a regular version of the exam. While these details may be plausible, they are not part of the reference answer and introduce elements that are not verified or required by the reference. The core element—providing textual annotations/descriptions for complex visuals in exams for autistic spectrum disorder candidates—is correct and matches the reference. However, because the response adds unverified, extra-specific information that goes beyond the reference answer, it cannot be considered fully accurate and factual as per the reference. Therefore, it does not fully align with the reference answer in terms of precision and factual correctness."
+  },
+  {
+    "question": "試場的錄影存檔會在何時銷毀？",
+    "true_answer": "有關錄像會於文憑試終結（即2025年11月30日）後銷毀。",
+    "generated_answer": "試場的錄影存檔會於2025年11月30日後銷毀。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the examination video recordings will be destroyed after November 30, 2025, which aligns with the reference answer that mentions the recordings will be destroyed after the HKDSE concludes on November 30, 2025. The key information—the date and the condition (after the exam ends)—is accurately conveyed. Although the response omits the explicit mention of \"文憑試終結\" (HKDSE concludes), the core factual content matches the reference answer precisely. Therefore, the response is completely correct, accurate, and factual."
+  },
+  {
+    "question": "哪些科目有提供語音轉換文字軟件作答的選項？",
+    "true_answer": "中國歷史科、倫理與宗教科、地理科、健康管理與社會關懷科、歷史科、英語文學科、旅遊與款待科及視覺藝術科（卷一甲部及卷二甲部）。",
+    "generated_answer": "公民與社會發展科及八個指定的選修科目，包括中國歷史科、倫理與宗教科、地理科、健康管理與社會關懷科、歷史科、英語文學科、旅遊與款待科及視覺藝術科（卷一甲部及卷二甲部）。",
+    "evaluation_score": 2,
+    "evaluation_feedback": "Feedback: The response lists the same subjects as the reference answer, including the specified sections (卷一甲部及卷二甲部), and correctly identifies that the subjects are the Chinese History, Ethics and Religion, Geography, Health Management and Social Care, History, English Literature, Tourism and Hospitality, and Visual Arts. The only difference is the addition of \"公民與社會發展科\" (Civic Education and Social Development), which is not part of the reference answer. This inclusion makes the response incorrect, as it introduces a subject not mentioned in the reference answer. Since the reference answer does not include this subject and the response adds it without justification, the factual accuracy is compromised. Therefore, the response is not completely accurate despite containing the correct list of subjects."
+  },
+  {
+    "question": "特殊需要考生在考試時獲准使用哪些輔助儀器？",
+    "true_answer": "特殊需要考生可獲准使用由學校提供或考生自備的輔助儀器，例如：點字機、放大鏡、助聽器材、電腦讀屏器、語音轉換文字軟件、文字處理器。",
+    "generated_answer": "特殊需要考生在考試時獲准使用由學校提供或自備的輔助儀器，包括：點字機、放大鏡、助聽器材、電腦讀屏器、語音轉換文字軟件及文字處理器。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately lists the auxiliary instruments allowed for special needs candidates during exams, including braille machines, magnifiers, hearing aids, screen readers, voice-to-text software, and word processors. The information aligns exactly with the reference answer in both content and structure. The only minor difference is the use of \"由學校提供或自備的\" (provided by school or self-provided), which is consistent with the reference answer's \"由學校提供或考生自備的\" (provided by school or by the candidate), with only a slight variation in phrasing that does not affect factual accuracy. All listed devices are correct and appropriately categorized."
+  },
+  {
+    "question": "哪些科目不提供短暫休息時間給使用語音轉換文字軟件的考生？",
+    "true_answer": "視覺藝術科（卷一甲部及卷二甲部）的考生不會獲給予短暫休息時間。",
+    "generated_answer": "視覺藝術科（卷一甲部及卷二甲部）不提供短暫休息時間給使用語音轉換文字軟件的考生。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response correctly identifies that the Visual Arts subject (Paper 1 Part A and Paper 2 Part A) does not provide short breaks for candidates using speech-to-text software, which aligns precisely with the reference answer. The phrasing differs slightly but maintains the same factual meaning and accuracy. The information is presented correctly and matches the reference answer in content and intent."
+  },
+  {
+    "question": "特別考試安排申請指引的附件可以在哪裡下載？",
+    "true_answer": "考評局網站內「為特殊需要考生提供服務」專頁。",
+    "generated_answer": "可於考評局網站內「為特殊需要考生提供服務」專頁下載。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response correctly identifies the location where the special examination arrangement application guide can be downloaded, which is the \"為特殊需要考生提供服務\" (Services for Candidates with Special Needs) page on the Examinations Authority's website. This aligns exactly with the reference answer, providing the same key information without any inaccuracies or extraneous details. The information is precise, factual, and directly matches the expected answer."
+  },
+  {
+    "question": "英國語文科的特別試場在聆聽部分會提供哪些設備給考生使用？",
+    "true_answer": "聆聽部分所需的設備（例如：紅外線接收器、USB播放器）及耳筒（適用於以紅外線接收系統廣播的特別試場）由考評局或考生的原校提供。考生無需攜帶收音機應試。",
+    "generated_answer": "在英國語文科聆聽部分的特別試場，考評局或考生的原校會提供以下設備：\n\n- 紅外線接收器（適用於以紅外線接收系統廣播的特別試場）  \n- USB播放器（適用於以紅外線接收系統廣播的特別試場）  \n- 耳筒（適用於以紅外線接收系統廣播的特別試場）\n\n考生無需攜帶收音機應試。若在紅外線接收系統廣播的特別試場應考，可選擇使用自備耳筒，但必須遵守相關規定。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately states that the equipment provided in the special examination venue for the listening section includes infrared receivers, USB players, and headphones, which aligns with the reference answer. It correctly notes that candidates do not need to bring a radio, and it adds relevant information about the option to use personal headphones under certain conditions, which is consistent with the reference answer’s factual content. All key elements—equipment provided, the absence of requirement to bring a radio, and the context of infrared broadcasting—are correctly conveyed. The response is fully aligned with the reference answer in terms of accuracy and factual correctness."
+  },
+  {
+    "question": "英國語文科聆聽部分的考試時間表列印在哪裡？",
+    "true_answer": "考試時間表列印在考生准考證內及張貼於考生桌上的考試時間表。",
+    "generated_answer": "英國語文科聆聽部分的考試時間列印在考生准考證內及張貼於考生桌上的考試時間表。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately states that the examination timetable for the British Language Paper Listening section is printed in the candidate's admission ticket and posted on the examination timetable displayed at the candidate's desk. This matches exactly with the reference answer, which confirms that the information is both correct and factual. There are no inaccuracies or irrelevant details."
+  },
+  {
+    "question": "口試助理會與哪類考生一同應考？",
+    "true_answer": "有肢體活動能力障礙、視障、聽障、語障或其他特殊需要類別的特殊需要考生",
+    "generated_answer": "口試助理會與有肢體活動能力障礙、視障、聽障、語障及／或其他特殊需要類別的特殊需要考生，以及有特殊學習障礙（學障）的考生一同應考。",
+    "evaluation_score": 4,
+    "evaluation_feedback": "Feedback: The response includes additional information not present in the reference answer, specifically mentioning \"有特殊學習障礙（學障）的考生\" (students with specific learning disabilities). While this group may be considered under \"特殊需要考生\" (students with special needs), the reference answer does not include this category, and the instruction asks for the specific group that the oral examination assistant would co-examine with. The inclusion of \"學障\" introduces an element not aligned with the reference answer, which limits accuracy. However, all the categories listed in the reference answer are correctly included in the response. The deviation is minor but significant enough to prevent a perfect score."
+  },
+  {
+    "question": "特別考試安排的查詢熱線是什麼？",
+    "true_answer": "3628 8917",
+    "generated_answer": "特別考試安排的查詢熱線是3628 8917。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response provides the correct telephone number, 3628 8917, which matches exactly with the reference answer. The information is accurate, factual, and directly addresses the query about the special examination arrangement inquiry hotline. There are no inaccuracies or irrelevant details."
+  },
+  {
+    "question": "特殊需要考生的口試小組人數是多少？",
+    "true_answer": "三人一組",
+    "generated_answer": "特殊需要考生的口試小組人數為三人一組。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the oral examination group size for special needs candidates is \"三人一組\" (three people per group), which matches exactly with the reference answer \"三人一組\". The information provided is accurate, factual, and directly aligns with the expected answer. There are no inaccuracies or deviations."
+  },
+  {
+    "question": "香港電台第二台在香港九龍東的頻道是什麼？",
+    "true_answer": "FM 96.9兆赫／FM 94.8兆赫",
+    "generated_answer": "香港電台第二台在香港九龍東的頻道是 FM 96.9 兆赫／FM 94.8 兆赫。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response correctly identifies the frequencies for Hong Kong Radio Second Channel in the Kowloon East area as FM 96.9 MHz and FM 94.8 MHz, which matches the reference answer exactly in terms of content and accuracy. The formatting is slightly different (using \"兆赫\" instead of the more common \"MHz\" in the reference, but this is a minor stylistic variation and does not affect factual correctness). The information provided is precise and fully aligned with the reference answer."
+  },
+  {
+    "question": "香港電台第二台在九龍區的頻道是甚麼？",
+    "true_answer": "FM 94.8兆赫／FM 96.9兆赫",
+    "generated_answer": "香港電台第二台在九龍區的頻道是 FM 94.8 兆赫／FM 96.9 兆赫。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "The response states that Hong Kong Radio's Radio 2 broadcasts on FM 94.8 MHz and FM 96.9 MHz in the Kowloon area, which aligns exactly with the reference answer. The information is factually accurate, correctly formatted, and matches the expected answer without any inaccuracies or superfluous details. The response directly answers the question with precise and verified frequencies."
+  },
+  {
+    "question": "在沙田地區，香港電台第二台使用的頻道是哪些？",
+    "true_answer": "FM 96.3兆赫／FM 95.3兆赫",
+    "generated_answer": "在沙田地區，香港電台第二台使用的頻道是 FM 96.3 兆赫 和 FM 95.3 兆赫。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that Hong Kong Radio's Second Programme uses FM 96.3 MHz and FM 95.3 MHz in the Sha Tin area. However, according to the reference answer, the correct frequencies are FM 96.3 MHz and FM 95.3 MHz, but the reference answer presents them in the format \"FM 96.3兆赫／FM 95.3兆赫\", which implies both are correct and used in the area. The response includes both frequencies and uses the correct unit (兆赫), and the frequencies match the reference. There is no factual inaccuracy. Although the presentation differs slightly (using \"和\" instead of \"／\"), the information conveyed is identical and correct. Therefore, the response is completely correct, accurate, and factual."
+  },
+  {
+    "question": "在英國語文科聆聽部分考試中，考生應如何調整收音機電線以達致較佳的接收效果？",
+    "true_answer": "考生應把電線拉直及垂放在兩旁，不應把電線捲曲；電線應與身體保持一定距離（不少於兩吋）。",
+    "generated_answer": "考生應把電線拉直並垂放在兩旁，不應把電線捲曲，且電線應與身體保持不少於兩吋的距離。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately states that the wires should be straightened and hung on both sides, and that they should not be coiled, which aligns with the reference answer. It also correctly specifies that the wires should maintain a distance of at least two inches from the body, matching the reference answer's requirement of \"a certain distance (not less than two inches).\" The information provided is precise, consistent with the reference, and contains no inaccuracies or irrelevant details. The phrasing is slightly more verbose than the reference but does not compromise correctness."
+  },
+  {
+    "question": "香港電台第二台在香港哪些地區使用 FM 95.6 兆赫頻道？",
+    "true_answer": "荃灣、葵涌、青衣、錦田、石崗、大嶼山東部使用 FM 95.6 兆赫頻道。",
+    "generated_answer": "香港電台第二台在以下地區使用 FM 95.6 兆赫頻道：  \n- 錦田、石崗  \n- 荃灣、葵涌、青衣  \n- 大嶼山東部",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response lists the correct regions—錦田、石崗、荃灣、葵涌、青衣、大嶼山東部—using FM 95.6 兆赫頻道, which matches the reference answer exactly. The information is accurate, complete, and consistent with the reference. The formatting is clear and the content is factually aligned with the reference."
+  },
+  {
+    "question": "若考生多番嘗試仍未能改善接收效果，應該如何處理？",
+    "true_answer": "應要求往特別室應試。",
+    "generated_answer": "應要求前往特別室應試。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response \"應要求前往特別室應試\" is essentially correct and aligns closely with the reference answer \"應要求往特別室應試.\" The minor difference lies in the use of \"前往\" versus \"往,\" which are both valid and interchangeable in this context, both conveying the same meaning of proceeding to a special room for the examination. The response accurately addresses the instruction by specifying the appropriate action when a candidate repeatedly fails to improve reception quality—requiring them to take the exam in a special room. There are no factual inaccuracies or deviations from the reference answer."
+  },
+  {
+    "question": "使用計算機應考時，計算機必須印上什麼標籤才符合規格？",
+    "true_answer": "H.K.E.A.A. APPROVED或H.K.E.A. APPROVED",
+    "generated_answer": "計算機必須已印上「H.K.E.A.A. APPROVED」或「H.K.E.A. APPROVED」的標籤才符合規格。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response correctly states that the calculator must be labeled with either \"H.K.E.A.A. APPROVED\" or \"H.K.E.A. APPROVED\", which matches the reference answer exactly. The information provided is accurate, complete, and directly aligned with the required specification. There are no inaccuracies or extraneous details."
+  },
+  {
+    "question": "2025年考評局提供免費加印標籤服務的日期是什麼時候？",
+    "true_answer": "3月7日和3月14日",
+    "generated_answer": "2025年3月7日及3月14日。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states \"2025年3月7日及3月14日\" which correctly identifies the dates as March 7 and March 14, 2025. The reference answer specifies \"3月7日和3月14日\", which is consistent in content and accuracy. Although the response includes the full year \"2025年\" while the reference answer omits it, this addition does not introduce inaccuracy—rather, it provides extra clarity. The dates are correct, accurate, and factual, matching the reference answer exactly in substance. Therefore, the response meets the criteria for a perfect score."
+  },
+  {
+    "question": "考生在考試開始前最少多久可以進入試場？",
+    "true_answer": "15分鐘",
+    "generated_answer": "考生可於開考最少 15 分鐘前進入試場。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that candidates can enter the examination hall at least 15 minutes before the exam starts, which matches the reference answer of \"15分鐘\" exactly in both content and factual accuracy. The information provided is precise, directly aligned with the reference, and fully correct according to the instruction."
+  },
+  {
+    "question": "考生在試場內不得攜帶哪些電子器材？",
+    "true_answer": "平板電腦、手提電話、多媒體播放器、電子字典、具文字顯示功能的手錶、智能手錶、無線耳機或其他穿戴式附有通訊或資料貯存功能之科技用品等",
+    "generated_answer": "考生在試場內不得攜帶的電子器材包括：平板電腦、手提電話、多媒體播放器、電子字典、具文字顯示功能的手錶、智能手錶、無線耳機或其他具通訊或資料貯存功能的穿戴式科技用品。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately lists the electronic devices that are prohibited in the examination hall, including tablet computers, mobile phones, multimedia players, electronic dictionaries, watches with text display, smartwatches, wireless earphones, and other wearable devices with communication or data storage functions. The content aligns closely with the reference answer, which includes the same items and similar phrasing. The only minor difference is the use of slightly more descriptive language (e.g., \"other具通訊或資料貯存功能的穿戴式科技用品\" vs. \"或其他穿戴式附有通訊或資料貯存功能之科技用品\"), but both convey the same meaning and scope. There are no inaccuracies, omissions, or factual errors. The response fully matches the reference answer in substance and correctness."
+  },
+  {
+    "question": "英語科卷三聆聽部分在什麼類型的試場才設有特別室？",
+    "true_answer": "由電台／紅外線接收系統廣播的試場",
+    "generated_answer": "特別室只設於考試錄音由電台或紅外線接收系統廣播的試場。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that \"特別室只設於考試錄音由電台或紅外線接收系統廣播的試場\" which accurately identifies the type of examination venues where special rooms are provided, aligning with the reference answer that specifies \"由電台／紅外線接收系統廣播的試場\". The wording is slightly more detailed than the reference answer but remains factually correct and consistent with the intended meaning. It correctly captures the essential condition—broadcast via radio or infrared receiver systems—without introducing any inaccuracies."
+  },
+  {
+    "question": "考生若將電腦條碼貼紙以電子或公開形式展示，其科目成績會如何處理？",
+    "true_answer": "成績會被降級",
+    "generated_answer": "其科目成績會被降級。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that \"其科目成績會被降級\", which directly aligns with the reference answer \"成績會被降級\" in both meaning and factual accuracy. The response correctly captures the consequence of displaying the computer barcode sticker in electronic or public form, as per the instruction. There are no inaccuracies, omissions, or misleading elements. The answer is concise and fully consistent with the reference."
+  },
+  {
+    "question": "在答題簿或補充答題紙上填寫試題編號時，若使用原子筆填錯，可以使用什麼工具進行更正？",
+    "true_answer": "塗改液／改錯筆／改錯帶",
+    "generated_answer": "若使用原子筆填錯試題編號，可以使用塗改液／改錯筆／改錯帶進行更正。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response correctly identifies the appropriate tools for correcting mistakes made with a ballpoint pen on answer sheets: 涂改液 (correction fluid), 改錯筆 (correction pen), and 改錯帶 (correction tape). These are all valid and commonly accepted methods for correcting errors in formal examination settings, matching exactly the reference answer. The answer is concise and directly addresses the question without irrelevant information. The information provided is accurate and consistent with standard examination procedures."
+  },
+  {
+    "question": "在答題簿或補充答題紙上填寫試題編號時，若使用鉛筆，應如何更正錯誤？",
+    "true_answer": "應以乾淨的擦膠（橡皮）擦去原先的題號。",
+    "generated_answer": "若使用鉛筆填畫試題編號方格而又需要更改錯誤，應以乾淨的擦膠（橡皮）擦去原先的題號。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response correctly states that if a mistake is made while using a pencil to fill in the exam number box, it should be corrected by using a clean eraser (橡皮) to remove the incorrect number. This aligns precisely with the reference answer, which specifies using a clean eraser to erase the previous number. The response is accurate, factual, and fully consistent with the reference answer."
+  },
+  {
+    "question": "考生在答題簿或補充答題紙上作答時，每條試題是否需要另開新頁？",
+    "true_answer": "是，除非試題包括若干部分，否則每作答一條試題均須另開新頁。",
+    "generated_answer": "除非試卷上特別指明，否則每作答一條試題均須另開新頁。但若一條試題包括若干部分，則每一部分無須另開新頁。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response correctly states that unless specifically instructed otherwise, each question should be answered on a new page, which aligns with the reference answer. It also accurately adds the exception that when a question has several parts, each part does not need a new page, which is consistent with the reference answer’s condition. The information is factually accurate, logically structured, and fully matches the reference answer in content and intent."
+  },
+  {
+    "question": "考生在考試中途需前往洗手間時，必須做什麼？",
+    "true_answer": "舉手通知監考員，並由監考人員先登記考生編號及記錄你離開考室前往洗手間及返回考室的時間。",
+    "generated_answer": "考生在考試中途需前往洗手間時，必須舉手通知監考員，並由監考人員登記考生編號及記錄離開和返回考室的時間。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately states that the examinee must raise their hand to notify the invigilator and that the invigilator must record the examinee's number and the times of leaving and returning to the examination room. This aligns precisely with the reference answer, which emphasizes notifying the invigilator and recording departure and return times. The wording differs slightly but conveys the same essential information and procedural requirements. The response is factually correct and fully consistent with the reference."
+  },
+  {
+    "question": "考生在考試完結前15分鐘內可以早退嗎？",
+    "true_answer": "不可以",
+    "generated_answer": "不可以。根据上下文，除特定考试外，考试完结前15分钟内不可早退。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states \"不可以\" (No), which aligns exactly with the reference answer. The additional explanation \"根据上下文，除特定考试外，考试完结前15分钟内不可早退\" (According to the context, except for specific exams, early departure is not allowed within 15 minutes before the exam ends) provides relevant context and clarifies the general rule. While the reference answer is concise, the response adds appropriate nuance without introducing inaccuracies. The core factual claim matches the reference answer perfectly, and the extra information does not detract from correctness. Therefore, the response is completely correct, accurate, and factual."
+  },
+  {
+    "question": "每張A3尺寸的補充答題紙由幾頁A4尺寸的答題紙組成？",
+    "true_answer": "四頁",
+    "generated_answer": "每張A3尺寸的補充答題紙由四頁A4尺寸的答題紙組成。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that each A3-sized supplementary answer sheet consists of four A4-sized answer sheets, which matches the reference answer \"四頁\" (four pages). The information provided is factually accurate and directly aligns with the expected answer. There is no deviation or inaccuracy in the response."
+  },
+  {
+    "question": "收音機的最大尺寸限制是多少？",
+    "true_answer": "46厘米x15厘米x15厘米",
+    "generated_answer": "收音機的最大尺寸限制是 46 厘米 x 15 厘米 x 15 厘米（18 吋 x 6 吋 x 6 吋）。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response provides the dimensions 46厘米 x 15厘米 x 15厘米 (18吋 x 6吋 x 6吋), which matches the reference answer exactly in terms of numerical values and units. The inclusion of imperial units (inches) is additional but does not contradict the reference answer. The response accurately conveys the maximum size limit as specified in the reference. Therefore, the response is completely correct, accurate, and factual."
+  },
+  {
+    "question": "考試時可使用的收音機設備有什麼限制？",
+    "true_answer": "只能使用能收聽FM電台廣播的耳筒式收音設備，其他電子儀器如多媒體播放器、藍牙／Wi-Fi設備、手提電話或內置於耳筒的收音機等均不可使用。",
+    "generated_answer": "考試時可使用的收音機設備須符合以下限制：\n\n1. 只可使用能收聽 FM 電台廣播的耳筒式收音設備，其他電子儀器（如多媒體播放器、藍牙／Wi-Fi 設備、手提電話或內置收音機的耳筒）不可使用。\n2. 收音機必須可放置於考試桌上，且桌面需有足夠空間擺放試題答題簿，機身體積不得超過 46 厘米 x 15 厘米 x 15 厘米（18 吋 x 6 吋 x 6 吋），不得放在地上。\n3. 收音機天線不得影響其他考生或阻礙通道。\n4. 若收音機有立體聲及單聲道模式，應選擇單聲道以獲得較佳接收效果。\n5. 不得使用具備自動調校頻道功能的收音機，以免接收不穩定。\n6. 收音機內不得存放任何儲存媒體（如 SD 記憶卡、光碟、錄音帶等）。\n7. 不符合上述要求的設備將不獲准使用，考生需前往特別室應考。\n\n此外，若在紅外線接收系統廣播的試場應考，則無需攜帶收音機，但需自備耳筒；若使用學校播音系統，則無需攜帶耳筒。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response provides a detailed and comprehensive list of restrictions for radio equipment during exams, including specifications on device type, size, functionality, and usage conditions. While the reference answer focuses solely on the core restriction—that only FM radio earpiece devices are allowed—the response expands on this with additional, plausible details such as size limits, antenna placement, mode selection, and storage media restrictions. These supplementary points are consistent with typical exam regulations and do not contradict the reference answer. The response also correctly notes exceptions (e.g., infrared systems or school broadcast systems), which are relevant and factually appropriate. Although the reference answer is more concise, the response is fully aligned with its key factual claim and includes no incorrect or inaccurate information. All stated restrictions are logically sound and consistent with standard exam rules. Therefore, the response is completely correct, accurate, and factual in relation to the reference answer."
+  },
+  {
+    "question": "在英國語文科卷三考試中，考生若遲到超過多少分鐘將被安排至特別室應考？",
+    "true_answer": "30分鐘",
+    "generated_answer": "考生遲到逾15分鐘將不獲安排於當日考試，但並未提及遲到超過多少分鐘會被安排至特別室應考。因此，根據提供的資料，無法確定遲到超過多少分鐘會被安排至特別室應考。",
+    "evaluation_score": 1,
+    "evaluation_feedback": "Feedback: The response states that the information about the exact number of minutes after which a考生 is assigned to a special room due to lateness is not provided in the given data, and therefore cannot be determined. However, the reference answer clearly states that the threshold is 30 minutes, which is the correct and factual answer based on the official guidelines for the UK English Paper 3 examination. The response fails to acknowledge this correct fact and instead claims the information is unavailable, which is incorrect. Since the reference answer is explicitly 30 minutes and the response contradicts this by asserting uncertainty, the response is factually inaccurate."
+  },
+  {
+    "question": "在英國語文科卷三考試中，考生什麼情況下會被安排到特別室應試？",
+    "true_answer": "沒有攜帶收音機、所帶的收音機／耳筒不能正常運作、忘記攜帶或遺失耳筒／電池、收音機體積過大、較報到時間遲逾30分鐘始抵達試場、報稱未能將收音機調校到指定電台或收音機接收不清、攜帶收音機以外之電子儀器應試。",
+    "generated_answer": "在英國語文科卷三考試中，考生若出現以下情況，將被安排到特別室應試：  \n- 沒有攜帶收音機；  \n- 所帶的收音機或耳筒不能正常運作；  \n- 忘記攜帶或遺失耳筒或電池；  \n- 收音機體積過大；  \n- 報到時間遲於規定時間逾30分鐘；  \n- 報稱無法將收音機調校到指定電台或接收不清；  \n- 携帶收音機以外的電子儀器應試。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response is completely correct, accurate, and factual when compared to the reference answer. All the conditions listed in the response match exactly with those in the reference answer, including the same wording and order of points. The only minor difference is the use of \"報到時間遲於規定時間逾30分鐘\" in the response, which is synonymous with \"較報到時間遲逾30分鐘始抵達試場\" in the reference answer, and both convey the same meaning. Additionally, the response correctly includes all the specified reasons for being assigned to a special room, with no extraneous or incorrect information. The formatting is clear and consistent, and no factual errors are present."
+  },
+  {
+    "question": "What should candidates do immediately after hearing \"That is the end of the Listening component of this paper.\"?",
+    "true_answer": "Take off their earphones and turn off the radio.",
+    "generated_answer": "Immediately after hearing \"That is the end of the Listening component of this paper.\", candidates should take off their earphones, turn off the radio, and prepare to complete the written tasks in either Part B1 or Part B2 for one hour and fifteen minutes.",
+    "evaluation_score": 4,
+    "evaluation_feedback": "Feedback: The response includes accurate actions such as taking off earphones and turning off the radio, which align with the reference answer. However, it adds extra information not present in the reference answer, such as preparing to complete written tasks in Part B1 or Part B2 for one hour and fifteen minutes. This additional detail is not required or implied in the original instruction and introduces information that is beyond the scope of the immediate action after the listening component ends. While the core actions are correct, the inclusion of unsupported and irrelevant details reduces the precision and factual accuracy of the response. Therefore, the response is not fully aligned with the reference answer, which only specifies the immediate physical actions."
+  },
+  {
+    "question": "What time does the examination recording start when broadcast via the PA system?",
+    "true_answer": "10:00 am",
+    "generated_answer": "10:00 am",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response \"10:00 am\" exactly matches the reference answer provided, which is \"10:00 am\". It is factually correct, accurate, and directly answers the question about the start time of the examination recording when broadcast via the PA system. There are no discrepancies, omissions, or inaccuracies."
+  },
+  {
+    "question": "英國語文科口試考生在報到時間後多久內可提出前往洗手間的需求？",
+    "true_answer": "30分鐘內",
+    "generated_answer": "考生應在報到時間起計的30分鐘內提出前往洗手間的需求。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that candidates should request to go to the restroom within 30 minutes from the check-in time, which exactly matches the reference answer \"30分鐘內\". The information provided is precise, accurate, and fully aligned with the expected answer. There are no discrepancies or additional irrelevant details. The response directly and correctly addresses the question as specified in the reference answer."
+  },
+  {
+    "question": "英國語文科口試考生若遲到超過15分鐘，將會有什麼後果？",
+    "true_answer": "不獲安排於當日考試，須於原定考試日期後的三個工作天內申請更改口試日期，並需繳交附加費。",
+    "generated_answer": "考生將不獲安排於當日考試，須於三個工作天內申請更改口試日期，並需繳交附加費。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately states that the考生 will not be scheduled for the examination on the same day, must apply to reschedule within three working days, and must pay an additional fee. These elements align precisely with the reference answer. The only minor difference is the phrasing \"三個工作天內\" versus \"原定考試日期後的三個工作天內,\" but the meaning remains consistent and does not alter the factual accuracy. The response fully matches the reference answer in content and correctness."
+  },
+  {
+    "question": "考生在英國語文科口試期間是否可以在報到室喝水？",
+    "true_answer": "可以",
+    "generated_answer": "根據提供的資料，並未明確提及考生在報到室是否可以喝水。然而，資料指出考生可在報到室等候時閱讀紙本書籍或報章，並建議考生在赴試場前先進食及於報到時間30分鐘內前往洗手間，暗示報到室允許基本的個人需求。因此，雖然沒有直接說明，但基於常理與試場管理的合理性，考生在報到室喝水應該是允許的，除非有特別禁止規定。但根據現有資料，無法絕對確認。",
+    "evaluation_score": 3,
+    "evaluation_feedback": "Feedback: The response attempts to analyze the provided information and draws a reasoned inference based on the context, but it fails to align with the reference answer, which is a simple and direct \"可以\" (yes). The reference answer implies that the correct factual response is a clear affirmation that students are allowed to drink water in the waiting room. However, the response introduces uncertainty by stating \"cannot absolutely confirm\" and refrains from directly affirming the allowance, despite the implication in the guidelines (e.g., allowing basic personal needs and suggesting hydration prior to the exam). While the reasoning is logical and contextually plausible, it does not match the factual correctness required by the reference answer. The response is therefore not fully accurate in the context of the expected factual answer."
+  },
+  {
+    "question": "How long is the group interaction in the examination if there are 3 candidates in a group?",
+    "true_answer": "6 minutes",
+    "generated_answer": "6 minutes.",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response \"6 minutes\" matches the reference answer exactly, which is \"6 minutes\". It is factually accurate and directly answers the question about the duration of the group interaction in the examination for 3 candidates. There is no discrepancy or inaccuracy in the response."
+  },
+  {
+    "question": "How long is the group interaction in the examination if there are 4 candidates in the group?",
+    "true_answer": "8 minutes",
+    "generated_answer": "The group interaction in the examination is 8 minutes long if there are 4 candidates in the group.",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the group interaction is 8 minutes long, which matches the reference answer exactly. The information provided is accurate and directly aligns with the correct answer. There are no inaccuracies or irrelevant details. The response is complete and factually correct as per the reference answer."
+  },
+  {
+    "question": "考評局的「公開考試委員會」有多少名成員？",
+    "true_answer": "16名",
+    "generated_answer": "根據上下文，「公開考試委員會」共有16名成員。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the \"公開考試委員會\" has 16 members, which matches the reference answer exactly. Although the response includes an unnecessary phrase \"根據上下文\" (based on the context), the core factual claim is accurate and directly aligns with the reference answer. The information provided is correct, accurate, and factual."
+  },
+  {
+    "question": "若考生對「公開考試委員會」的決定有異議，需在成績發放後多少天內提出上訴覆核申請？",
+    "true_answer": "5曆日",
+    "generated_answer": "考生需在成績發放後5曆日內提出上訴覆核申請。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that candidates must submit an appeal review application within 5 calendar days after the release of results, which aligns exactly with the reference answer \"5曆日\". The information provided is accurate, factual, and directly corresponds to the correct answer. There are no discrepancies or additional irrelevant details. The response fully satisfies the requirement of the question."
+  },
+  {
+    "question": "香港中學文憑考試中，因病無法應考的考生可獲頒發的科目評審成績最低等級為何？",
+    "true_answer": "甲類核心科目第1級及甲類選修科目第2級",
+    "generated_answer": "根據上下文，因病無法應考的考生若獲頒發科目評審成績，其最低等級為「達標」（僅適用於公民與社會發展科）。其他甲類核心科目及甲類選修科目的評審成績最低等級為第2級。",
+    "evaluation_score": 2,
+    "evaluation_feedback": "Feedback: The response contains partial accuracy but includes significant errors. It incorrectly states that the lowest grade for \"公民與社會發展科\" (Civic Education and Social Development) is \"達標\" (Pass), which is not consistent with the official grading system. The reference answer specifies that the lowest possible grade for甲類核心科目 is第1級 (Level 1), and for甲類選修科目 is第2級 (Level 2). The response incorrectly implies that \"達標\" is a valid grade level, which is not standard terminology in the HKDSE grading system. Additionally, it fails to correctly identify that the lowest grade for all甲類核心科目 is第1級, not just a special case for one subject. The mention of \"達標\" suggests a misunderstanding of the official grading scale. Therefore, the response is not factually accurate in key aspects."
+  },
+  {
+    "question": "香港中學文憑考試中，因病無法應考的考生若符合條件，可獲發的科目評審成績最高為哪一級？",
+    "true_answer": "甲類核心科目第5級及甲類選修科目第5級",
+    "generated_answer": "甲類核心科目最高為第5級，甲類選修科目最高為第5級。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that both the甲類核心科目 and甲類選修科目最高为第5級, which aligns with the reference answer that specifies \"甲類核心科目第5級及甲類選修科目第5級.\" The information provided is factually accurate and directly matches the reference answer in terms of content and correctness. The response correctly identifies the highest possible grade for both subject categories under the Hong Kong Diploma of Secondary Education Examination for candidates who are unable to sit the exam due to illness and meet the eligibility criteria. There are no inaccuracies or omissions."
+  },
+  {
+    "question": "考生因考試當日患上高度傳染性疾病，應如何申請特別處理？",
+    "true_answer": "必須按規定程序致電考評局備案，並立即取得醫生證明書正本，於考試日後起計21曆日內書面申請，附上醫生證明書正本。",
+    "generated_answer": "考生因考試當日患上高度傳染性疾病，屬不可預計的特殊情況，可向考評局申請特別處理。須按程序提交申請，並提供相關證明文件（如醫生證明），證明病情嚴重以致無法應考。申請須於截止日期前遞交，否則將不獲處理。考評局將根據考生已應考部分的表現評估成績，或在不適用時發給評審成績。考生不得於考試當天致電考評局。",
+    "evaluation_score": 2,
+    "evaluation_feedback": "The response correctly identifies that a candidate with a highly contagious illness on exam day can apply for special consideration and emphasizes the need to submit documentation such as a doctor's certificate. It also correctly notes that applications must be submitted before the deadline and that the examination body will assess based on prior performance or issue a review grade if applicable. However, it fails to mention the critical requirement of contacting the examination board immediately on the day of the exam, which is explicitly stated in the reference answer as \"必須按規定程序致電考評局備案\" (must contact the examination board via the prescribed procedure). Additionally, the response incorrectly states that the candidate \"不得於考試當天致電考評局,\" which contradicts the reference answer and is factually wrong. This omission and incorrect information significantly undermine the accuracy and completeness of the response. While the response contains several correct elements, it misses a key procedural step and includes a false restriction. Therefore, it does not fully align with the reference answer in terms of accuracy and factual correctness."
+  },
+  {
+    "question": "重閱答卷申請中，英國語文科口試需提交什麼材料？",
+    "true_answer": "口試錄影",
+    "generated_answer": "申請重閱英國語文科口試答卷，需另行提交口試錄影。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that \"申請重閱英國語文科口試答卷，需另行提交口試錄影\" (To apply for a recheck of the British Language oral exam script, one must separately submit the oral exam recording). This aligns precisely with the reference answer \"口試錄影\" (oral exam recording), as it correctly identifies the required material for the recheck application. The response is concise, accurate, and directly addresses the question without unnecessary or incorrect information. It fully matches the factual content of the reference answer."
+  },
+  {
+    "question": "自修生如何提交積分覆核或重閱答卷申請？",
+    "true_answer": "必須透過香港中學文憑考試網上服務直接向考評局遞交申請，網址：www.hkdse.hkeaa.edu.hk",
+    "generated_answer": "自修生必須透過香港中學文憑考試網上服務直接向考評局遞交申請，網址為 www.hkdse.hkeaa.edu.hk。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response accurately states that self-studying candidates must submit their application through the Hong Kong Diploma of Secondary Education Examination online service directly to the Examinations Authority, and provides the correct website address, www.hkdse.hkeaa.edu.hk. The information matches the reference answer exactly in content and accuracy, with only minor differences in punctuation (use of full stop vs. no full stop, and spacing around the colon). These minor stylistic differences do not affect the factual correctness. Therefore, the response is completely correct, accurate, and factual according to the rubric."
+  },
+  {
+    "question": "申請積分覆核或重閱答卷的費用繳付限期是多久？",
+    "true_answer": "提交申請後的2曆日內",
+    "generated_answer": "申請積分覆核或重閱答卷的費用繳付限期是提交申請後的2個歷日內。如繳費限期為星期六或星期日，則會自動順延至下一個星期一。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the payment deadline for application for score review or script re-marking is within 2 working days after submission, and includes a clarification that if the deadline falls on a Saturday or Sunday, it is automatically extended to the following Monday. This information aligns with the reference answer, which specifies \"within 2 calendar days after submission.\" While the reference answer does not mention weekend extensions, the additional detail in the response does not contradict the core fact and is consistent with common administrative practices. The main information—2 calendar days—is accurate and matches the reference answer exactly. Therefore, the response is completely correct, accurate, and factual."
+  },
+  {
+    "question": "申請積分覆核或重閱答卷的最多科目數量是多少？",
+    "true_answer": "不超過四科",
+    "generated_answer": "申請積分覆核及／或重閱答卷的最多科目數量是四科。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the maximum number of subjects for applying for score review or script re-marking is \"四科\" (four subjects), which aligns exactly with the reference answer \"不超過四科\" (not exceeding four subjects). The phrasing \"申請積分覆核及／或重閱答卷的最多科目數量是四科\" accurately conveys the same meaning as the reference answer, using correct terminology and maintaining factual accuracy. There is no deviation or inaccuracy in the information provided."
+  },
+  {
+    "question": "申請覆核成績的截止日期是什麼時候？",
+    "true_answer": "2025年8月18日",
+    "generated_answer": "申請覆核成績的截止日期是2025年8月18日。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "Feedback: The response states that the deadline for applying for grade review is \"2025年8月18日,\" which exactly matches the reference answer provided. The information is accurate, factual, and directly aligned with the correct answer. There are no additional or misleading details, and the response is concise and correct."
+  },
+  {
+    "question": "HP-65型號的計算機是否被列入附錄的准用計算機型號名單中？",
+    "true_answer": "否",
+    "generated_answer": "HP-65 型號的計算機未被列入附錄的准用計算機型號名單中。",
+    "evaluation_score": 5,
+    "evaluation_feedback": "The response states that the HP-65 model computer is not listed in the appendix's approved calculator model list, which aligns exactly with the reference answer \"否\" (no). The reference answer is a concise \"no,\" indicating that the HP-65 is not approved, and the response accurately reflects this by explicitly stating the same conclusion. There is no factual inaccuracy, omission, or misrepresentation. The response is correct, accurate, and fully aligned with the reference answer."
+  }
+]

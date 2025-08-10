@@ -188,7 +188,7 @@ memories = Memories.create(messages)
 curl -X POST "http://localhost:8000/documents" \
   -H "Content-Type: application/json" \
   -d '{
-    "url": "https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.3/assets/pdf/01.pdf",
+    "url": "https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.4/assets/pdf/01.pdf",
     "page_number": 1,
     "temperature": 0.7,
     "max_tokens": 4000
@@ -206,6 +206,39 @@ curl -X POST "http://localhost:8000/memories" \
     "max_tokens": 4000
   }'
 ```
+
+## 📊 Benchmark Results
+
+Kallia has been extensively benchmarked against other popular document processing libraries using a comprehensive RAG (Retrieval-Augmented Generation) evaluation framework. The benchmark evaluates the quality of document chunking and retrieval performance across 100 test questions.
+
+### Performance Comparison
+
+![Benchmark Results](https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.4/benchmark/results.png)
+
+| System       | Mean Score | Perfect Score Rate | Ranking    |
+| ------------ | ---------- | ------------------ | ---------- |
+| **Kallia**   | **4.600**  | **81.0%**          | **🥇 1st** |
+| LlamaIndex   | 4.300      | 71.0%              | 🥈 2nd     |
+| PyMuPDF      | 4.060      | 65.0%              | 🥉 3rd     |
+| Unstructured | 3.950      | 63.0%              | 4th        |
+
+### Key Advantages
+
+- **Highest Accuracy**: Kallia achieves the highest mean score of 4.6/5.0
+- **Superior Perfect Score Rate**: 81% of questions received perfect scores vs. 71% for the next best
+- **Semantic Chunking**: Uses intelligent semantic chunking vs. fixed 500-character chunks with 0 overlap used by competitors
+
+### Benchmark Details
+
+- **Evaluation Model**: Qwen3 30B A3B Instruct 2507
+- **Test Questions**: 100 comprehensive questions across various document types
+- **Scoring**: 1-5 scale (1=Poor, 2=Below Average, 3=Average, 4=Good, 5=Excellent)
+- **Chunking Method**: Kallia uses semantic chunking with Qwen2.5 VL 32B Instruct
+- **Competitor Methods**: Fixed 500-character chunks with 0 overlap
+
+The benchmark results demonstrate Kallia's superior performance in document processing and retrieval tasks, making it the optimal choice for applications requiring high-quality document understanding and semantic chunking.
+
+For detailed benchmark results and visualizations, see the `benchmark/` directory.
 
 ## 🧪 Testing
 
@@ -253,7 +286,7 @@ The architecture is designed to be extensible for additional formats.
 
 ## 📝 License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.4/LICENSE) file for details.
 
 ## 🔗 Links
 

@@ -13,9 +13,12 @@ from kallia_core.utils import Utils
 
 
 class ImageCaptionSerializer(MarkdownPictureSerializer):
-    def __init__(self, temperature: float, max_tokens: int) -> None:
+    def __init__(
+        self, temperature: float, max_tokens: int, include_image_captioning: bool
+    ) -> None:
         self.temperature = temperature
         self.max_tokens = max_tokens
+        self.include_image_captioning = include_image_captioning
 
     @override
     def serialize(
@@ -26,6 +29,9 @@ class ImageCaptionSerializer(MarkdownPictureSerializer):
         doc: DoclingDocument,
         **kwargs: Any,
     ) -> SerializationResult:
+        if not self.include_image_captioning:
+            return create_ser_result(text="<image></image>", span_source=item)
+
         image_url = Utils.to_data_url(item.get_image(doc))
         messages = [
             {
