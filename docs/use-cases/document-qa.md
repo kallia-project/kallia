@@ -15,167 +15,111 @@ Build a document question-answering system using Kallia with LangChain integrati
 3. Upload a PDF file
 4. Ask questions about the document
 
-## LangChain Integration
+## Vector Database Integration
 
-### Setup
+### Simple Setup
 
 ```python
-from langchain_core.documents import Document
-from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.chains import RetrievalQA
-from langchain.llms import OpenAI
 import requests
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_core.documents import Document
 
-# Initialize LangChain components
-embeddings = OpenAIEmbeddings()
-llm = OpenAI(temperature=0.7)
+# Initialize embeddings
+embeddings = OpenAIEmbeddings(api_key="your-openai-key")
 ```
 
-### Process Document with Kallia
+### Process and Store Documents
 
 ```python
-def process_document_with_kallia(file_path):
-    """Process document using Kallia API"""
-
-    response = requests.post(
-        "http://localhost:8000/documents",
-        json={
-            "url": file_path,
-            "page_number": 1,
-            "temperature": 0.7,
-            "max_tokens": 4000
-        }
-    )
-
+def create_vector_store(file_path):
+    # Get chunks from Kallia
+    response = requests.post("http://localhost:8000/documents", json={
+        "url": file_path
+    })
     chunks = response.json()["documents"][0]["chunks"]
 
-    # Convert to LangChain documents
-    documents = []
-    for i, chunk in enumerate(chunks):
-        doc = Document(
+    # Convert to documents
+    documents = [
+        Document(
             page_content=chunk["original_text"],
-            metadata={
-                "summary": chunk["concise_summary"],
-                "question": chunk["question"],
-                "answer": chunk["answer"],
-                "chunk_id": i
-            }
+            metadata={"summary": chunk["concise_summary"]}
         )
-        documents.append(doc)
+        for chunk in chunks
+    ]
 
-    return documents
+    # Create vector store
+    vectorstore = FAISS.from_documents(documents, embeddings)
+    return vectorstore
 ```
 
-### Create Vector Store
+### Ask Questions
 
 ```python
-def create_qa_system(documents):
-    """Create QA system with vector store"""
+def ask_question(vectorstore, question):
+    # Find similar chunks
+    docs = vectorstore.similarity_search(question, k=3)
 
-    # Create vector store from documents
-    vectorstore = FAISS.from_documents(documents, embeddings)
+    # Combine relevant content
+    context = "\n".join([doc.page_content for doc in docs])
 
-    # Create retrieval QA chain
-    qa_chain = RetrievalQA.from_chain_type(
-        llm=llm,
-        chain_type="stuff",
-        retriever=vectorstore.as_retriever(search_kwargs={"k": 3}),
-        return_source_documents=True
-    )
-
-    return qa_chain
+    # You can use any LLM here to generate answer from context
+    return {
+        "context": context,
+        "sources": [doc.metadata.get("summary", "") for doc in docs]
+    }
 ```
 
 ### Complete Example
 
 ```python
 import requests
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_core.documents import Document
-from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.chains import RetrievalQA
-from langchain.llms import OpenAI
 
-class KalliaLangChainQA:
-    def __init__(self, openai_api_key):
-        self.embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
-        self.llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
-        self.qa_chain = None
+class SimpleQA:
+    def __init__(self, openai_key):
+        self.embeddings = OpenAIEmbeddings(api_key=openai_key)
+        self.vectorstore = None
 
     def load_document(self, file_path):
-        """Load and process document with Kallia"""
-
         # Process with Kallia
-        response = requests.post(
-            "http://localhost:8000/documents",
-            json={
-                "url": file_path,
-                "page_number": 1,
-                "temperature": 0.7,
-                "max_tokens": 4000
-            }
-        )
-
+        response = requests.post("http://localhost:8000/documents", json={
+            "url": file_path
+        })
         chunks = response.json()["documents"][0]["chunks"]
 
-        # Convert to LangChain documents
-        documents = []
-        for i, chunk in enumerate(chunks):
-            doc = Document(
+        # Create documents
+        documents = [
+            Document(
                 page_content=chunk["original_text"],
-                metadata={
-                    "summary": chunk["concise_summary"],
-                    "question": chunk["question"],
-                    "answer": chunk["answer"],
-                    "chunk_id": i,
-                    "source": file_path
-                }
+                metadata={"summary": chunk["concise_summary"]}
             )
-            documents.append(doc)
+            for chunk in chunks
+        ]
 
-        # Create vector store and QA chain
-        vectorstore = FAISS.from_documents(documents, self.embeddings)
-        self.qa_chain = RetrievalQA.from_chain_type(
-            llm=self.llm,
-            chain_type="stuff",
-            retriever=vectorstore.as_retriever(search_kwargs={"k": 3}),
-            return_source_documents=True
-        )
-
+        # Create vector store
+        self.vectorstore = FAISS.from_documents(documents, self.embeddings)
         return len(documents)
 
-    def ask_question(self, question):
-        """Ask a question about the loaded document"""
+    def ask(self, question):
+        if not self.vectorstore:
+            return "No document loaded"
 
-        if not self.qa_chain:
-            raise ValueError("No document loaded. Call load_document() first.")
-
-        result = self.qa_chain({"query": question})
+        # Get relevant chunks
+        docs = self.vectorstore.similarity_search(question, k=3)
 
         return {
-            "answer": result["result"],
-            "sources": [
-                {
-                    "content": doc.page_content[:200] + "...",
-                    "summary": doc.metadata.get("summary", ""),
-                    "chunk_id": doc.metadata.get("chunk_id", "")
-                }
-                for doc in result["source_documents"]
-            ]
+            "relevant_chunks": [doc.page_content for doc in docs],
+            "summaries": [doc.metadata["summary"] for doc in docs]
         }
 
 # Usage
-qa_system = KalliaLangChainQA(openai_api_key="your-api-key")
-
-# Load document
-num_chunks = qa_system.load_document("research_paper.pdf")
-print(f"Loaded {num_chunks} chunks")
-
-# Ask questions
-answer = qa_system.ask_question("What is the main topic of this paper?")
-print(f"Answer: {answer['answer']}")
-print(f"Sources: {len(answer['sources'])} chunks")
+qa = SimpleQA("your-openai-key")
+qa.load_document("document.pdf")
+result = qa.ask("What is the main topic?")
+print(result)
 ```
 
 ## Best Practices

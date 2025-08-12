@@ -16,7 +16,3 @@
 
 - [❓ Document Q&A](use-cases/document-qa.md)
 - [📝 Form Filling](use-cases/form-filling.md)
-
-## Advanced
-
-- [📊 Benchmarks](advanced/benchmarks.md)

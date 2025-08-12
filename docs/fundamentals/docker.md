@@ -16,8 +16,6 @@ Each service can be deployed independently using Docker and Docker Compose.
 - Docker 20.10 or higher
 - Docker Compose 2.0 or higher
 - Ollama running locally (for AI model inference)
-- 4GB+ RAM recommended
-- 2GB+ disk space
 
 ## Quick Start
 
@@ -93,32 +91,6 @@ KALLIA_PROVIDER_BASE_URL=http://localhost:11434/v1
 KALLIA_PROVIDER_MODEL=qwen2.5vl:32b
 ```
 
-### Manual Docker Commands
-
-Using the pre-built image from Docker Hub:
-
-```bash
-docker run -d \
-  --name kallia-core \
-  -p 8000:80 \
-  -e KALLIA_PROVIDER_API_KEY=ollama \
-  -e KALLIA_PROVIDER_BASE_URL=http://localhost:11434/v1 \
-  -e KALLIA_PROVIDER_MODEL=qwen2.5vl:32b \
-  overheatsystem/kallia:0.1.4
-```
-
-Building locally:
-
-```bash
-cd kallia/core
-docker build -t kallia-core .
-docker run -d \
-  --name kallia-core \
-  -p 8000:80 \
-  --env-file .env \
-  kallia-core
-```
-
 ## Playground Service
 
 ### Docker Compose Configuration
@@ -168,49 +140,6 @@ KALLIA_PROVIDER_API_KEY=ollama
 KALLIA_PROVIDER_BASE_URL=http://localhost:11434/v1
 KALLIA_PROVIDER_MODEL=qwen2.5vl:32b
 ```
-
-### Manual Docker Commands
-
-Build and run the playground:
-
-```bash
-cd kallia/playground
-docker build -t kallia-playground .
-docker run -d \
-  --name kallia-playground \
-  -p 8000:80 \
-  --env-file .env \
-  kallia-playground
-```
-
-## Ollama Setup
-
-Kallia requires Ollama to be running locally for AI model inference.
-
-### Install Ollama
-
-```bash
-# Install Ollama (Linux/macOS)
-curl -fsSL https://ollama.ai/install.sh | sh
-
-# Or download from https://ollama.ai/download
-```
-
-### Pull Required Model
-
-```bash
-# Pull the Qwen2.5 VL 32B model
-ollama pull qwen2.5vl:32b
-```
-
-### Start Ollama Service
-
-```bash
-# Start Ollama service
-ollama serve
-```
-
-Ollama will be available at `http://localhost:11434`
 
 ## Environment Variables
 

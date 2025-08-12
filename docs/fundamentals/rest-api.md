@@ -107,6 +107,14 @@ Converts a document to structured markdown format.
 }
 ```
 
+#### Parameters
+
+- `url` (string, required): Path or URL to the document
+- `page_number` (integer, optional): Page number to process (default: 1)
+- `temperature` (float, optional): AI model temperature 0.0-1.0 (default: 0.0)
+- `max_tokens` (integer, optional): Maximum tokens for processing (default: 8192)
+- `include_image_captioning` (boolean, optional): Enable image descriptions (default: false)
+
 #### Response
 
 ```json
@@ -325,127 +333,13 @@ No rate limiting is currently implemented. For production use, consider implemen
 ## Request Size Limits
 
 - Maximum file size: Depends on server configuration
-- Maximum request body: 100MB (configurable)
 - Maximum text length: No explicit limit (limited by max_tokens)
-
-## Python Client Examples
-
-### Using requests library
-
-```python
-import requests
-import json
-
-# Document processing
-def process_document(url, page_number=1):
-    response = requests.post(
-        "http://localhost:8000/documents",
-        json={
-            "url": url,
-            "page_number": page_number,
-            "temperature": 0.7,
-            "max_tokens": 4000
-        }
-    )
-    return response.json()
-
-# Memory creation
-def create_memories(messages):
-    response = requests.post(
-        "http://localhost:8000/memories",
-        json={
-            "messages": messages,
-            "temperature": 0.7,
-            "max_tokens": 4000
-        }
-    )
-    return response.json()
-
-# Usage
-result = process_document("document.pdf", 1)
-memories = create_memories([
-    {"role": "user", "content": "Hello"},
-    {"role": "assistant", "content": "Hi there!"}
-])
-```
-
-### Using httpx (async)
-
-```python
-import httpx
-import asyncio
-
-async def async_process_document(url, page_number=1):
-    async with httpx.AsyncClient() as client:
-        response = await client.post(
-            "http://localhost:8000/documents",
-            json={
-                "url": url,
-                "page_number": page_number,
-                "temperature": 0.7,
-                "max_tokens": 4000
-            }
-        )
-        return response.json()
-
-# Usage
-result = asyncio.run(async_process_document("document.pdf"))
-```
-
-## JavaScript Client Examples
-
-### Using fetch
-
-```javascript
-// Document processing
-async function processDocument(url, pageNumber = 1) {
-  const response = await fetch("http://localhost:8000/documents", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      url: url,
-      page_number: pageNumber,
-      temperature: 0.7,
-      max_tokens: 4000,
-    }),
-  });
-
-  return await response.json();
-}
-
-// Memory creation
-async function createMemories(messages) {
-  const response = await fetch("http://localhost:8000/memories", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      messages: messages,
-      temperature: 0.7,
-      max_tokens: 4000,
-    }),
-  });
-
-  return await response.json();
-}
-
-// Usage
-const result = await processDocument("document.pdf", 1);
-const memories = await createMemories([
-  { role: "user", content: "Hello" },
-  { role: "assistant", content: "Hi there!" },
-]);
-```
 
 ## API Documentation
 
 When the server is running, interactive API documentation is available at:
 
 - **Swagger UI**: `http://localhost:8000/docs`
-- **ReDoc**: `http://localhost:8000/redoc`
 
 These interfaces provide:
 

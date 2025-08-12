@@ -147,47 +147,6 @@ memories = Memories.create(
 )
 ```
 
-## Advanced Usage
-
-### Custom Processing Pipeline
-
-```python
-from kallia_core.documents import Documents
-from kallia_core.chunker import Chunker
-from kallia_core.memories import Memories
-
-class DocumentProcessor:
-    def __init__(self, temperature=0.7, max_tokens=4000):
-        self.temperature = temperature
-        self.max_tokens = max_tokens
-
-    def process_document(self, source, page_number=1):
-        # Step 1: Convert to markdown
-        markdown = Documents.to_markdown(
-            source=source,
-            page_number=page_number,
-            temperature=self.temperature,
-            max_tokens=self.max_tokens
-        )
-
-        # Step 2: Create semantic chunks
-        chunks = Chunker.create(
-            text=markdown,
-            temperature=self.temperature,
-            max_tokens=self.max_tokens
-        )
-
-        return {
-            'markdown': markdown,
-            'chunks': chunks,
-            'page_number': page_number
-        }
-
-# Usage
-processor = DocumentProcessor(temperature=0.8, max_tokens=6000)
-result = processor.process_document("research_paper.pdf", page_number=1)
-```
-
 ## Next Steps
 
 - Explore the [REST API](rest-api.md) for web service integration
