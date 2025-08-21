@@ -26,6 +26,13 @@ class Utils:
             return None
 
     @staticmethod
+    def extract_json(text: str) -> str:
+        if text.startswith("```json") and text.endswith("```"):
+            return text[7:-3]
+        else:
+            return None
+
+    @staticmethod
     def get_extension(url: str) -> Optional[str]:
         parsed_url = urlparse(url)
         _, extension = os.path.splitext(parsed_url.path)

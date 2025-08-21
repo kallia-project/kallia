@@ -3,7 +3,7 @@ from kallia_core.chunker import Chunker
 
 
 def test_markdown_to_chunks():
-    url = "https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.3/assets/pdf/01.pdf"
+    url = "https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.5/assets/pdf/01.pdf"
     page_number = 1
     temperature = 0.0
     max_tokens = 8192

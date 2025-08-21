@@ -21,4 +21,6 @@ class Chunker:
             max_tokens=max_tokens,
         )
         content = Utils.unwrap("information", response)
+        if content is None:
+            content = Utils.extract_json(response)
         return json.loads(content)
