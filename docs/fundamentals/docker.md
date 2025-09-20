@@ -51,7 +51,7 @@ The core service uses the following `docker-compose.yml`:
 name: kallia
 services:
   core:
-    image: overheatsystem/kallia:0.1.4
+    image: overheatsystem/kallia:0.1.6
     container_name: core
     ports:
       - "8000:80"
@@ -169,7 +169,7 @@ KALLIA_PROVIDER_MODEL=gpt-4-vision
 
 Pre-built images are available on Docker Hub:
 
-- **Core Service**: `overheatsystem/kallia:0.1.4`
+- **Core Service**: `overheatsystem/kallia:0.1.6`
 - **Latest**: `overheatsystem/kallia:latest`
 
 ```bash
@@ -211,7 +211,7 @@ If running both core and playground together:
 version: "3.8"
 services:
   core:
-    image: overheatsystem/kallia:0.1.4
+    image: overheatsystem/kallia:0.1.6
     ports:
       - "8000:80"
     networks:

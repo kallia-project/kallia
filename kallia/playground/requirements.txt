@@ -1,4 +1,4 @@
-kallia==0.1.3
+kallia==0.1.6
 chainlit==2.6.2
 langchain-core==0.3.69
 langchain-openai==0.3.28

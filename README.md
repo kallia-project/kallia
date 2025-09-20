@@ -1,6 +1,6 @@
 # Kallia
 
-[![Version](https://img.shields.io/badge/version-0.1.5-blue.svg)](https://github.com/kallia-project/kallia)
+[![Version](https://img.shields.io/badge/version-0.1.6-blue.svg)](https://github.com/kallia-project/kallia)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://python.org)
 [![Docker](https://img.shields.io/badge/docker-overheatsystem%2Fkallia-blue.svg)](https://hub.docker.com/r/overheatsystem/kallia)
@@ -188,7 +188,7 @@ memories = Memories.create(messages)
 curl -X POST "http://localhost:8000/documents" \
   -H "Content-Type: application/json" \
   -d '{
-    "url": "https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.5/assets/pdf/01.pdf",
+    "url": "https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.6/assets/pdf/01.pdf",
     "page_number": 1,
     "temperature": 0.7,
     "max_tokens": 4000
@@ -213,7 +213,7 @@ Kallia has been extensively benchmarked against other popular document processin
 
 ### Performance Comparison
 
-![Benchmark Results](https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.5/benchmark/results.png)
+![Benchmark Results](https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.6/benchmark/results.png)
 
 | System       | Mean Score | Perfect Score Rate | Ranking    |
 | ------------ | ---------- | ------------------ | ---------- |
@@ -286,7 +286,7 @@ The architecture is designed to be extensible for additional formats.
 
 ## 📝 License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.5/LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.6/LICENSE) file for details.
 
 ## 🔗 Links
 

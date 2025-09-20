@@ -34,7 +34,7 @@ def add_documents(source: str, page_number: int) -> None:
 
     for chunk in chunks:
         doc = Document(
-            page_content=json.dumps(chunk, ensure_ascii=False),
+            page_content=chunk["original_text"],
             metadata={"page_number": page_number, "source": source},
         )
         documents.append(doc)

@@ -41,6 +41,6 @@ class UnorderedListSerializer(MarkdownTableSerializer):
             temperature=self.temperature,
             max_tokens=self.max_tokens,
         )
-        extracted_data = Utils.unwrap("information", response)
+        extracted_data = Utils.unwrap_tag("information", response)
         content = f"<table>{extracted_data}</table>"
         return create_ser_result(text=content, span_source=item)

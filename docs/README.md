@@ -50,7 +50,7 @@ Chainlit-powered chat interface for real-time document Q&A with memory managemen
 
 ### 📊 Benchmark Performance
 
-![Benchmark Results](https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.4/benchmark/results.png)
+![Benchmark Results](https://raw.githubusercontent.com/kallia-project/kallia/refs/tags/v0.1.6/benchmark/results.png)
 
 Proven superior performance with 4.6/5.0 mean score and 81% perfect score rate in comprehensive RAG evaluations.
 

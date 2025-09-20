@@ -1,4 +1,3 @@
-import json
 import kallia_core.models as Models
 import kallia_core.prompts as Prompts
 from typing import Any, Dict, List
@@ -23,5 +22,8 @@ class Memories:
             temperature=temperature,
             max_tokens=max_tokens,
         )
-        content = Utils.unwrap("information", response)
-        return json.loads(content)
+        content = Utils.unwrap_tag("information", response)
+        if content is None:
+            content = Utils.unwrap_json_tag(response)
+        parsed_content = Utils.parse_json(content)
+        return parsed_content if parsed_content else {}
